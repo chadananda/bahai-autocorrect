@@ -11,9 +11,9 @@ npm install --save bahai-term-phoneme
 ``` Javascript
 var bac = require('bahai-autocorrect'); 
 
-bac.replace(str) 
+bac.correct(str) 
 // Identifies and corrects common Baha'i term misspellings. Usually won't corrupt HTML.
-// for example: bac.replace("Akb^ar Babi Mulla Husayn")
+// for example: bac.correct("Akb^ar Babi Mulla Husayn")
 // output: Akbár Bábí Mullá Ḥusayn 
 ```
  
