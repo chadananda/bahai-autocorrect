@@ -1,0 +1,24 @@
+{
+  "name": "bahai-autocorrect",
+  "version": "1.0.0",
+  "description": "Simple UTF-8 autocorrect for the most common Baha'i terms",
+  "main": "bahai-autocorrect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bahai",
+    "tts",
+    "ipn"
+  ],
+  "author": "Chad Jones <chadananda@gmail.com> ",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadananda/bahai-autocorrect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chadananda/bahai-autocorrect/issues"
+  },
+  "homepage": "https://github.com/chadananda/bahai-autocorrect#readme"
+}
