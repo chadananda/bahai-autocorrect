@@ -4,7 +4,7 @@ Simple replace script to correct most common Baha'i terms as UTF-8 in Text or HT
 
 ### Install the interface module into your node project with:
 ``` 
-npm install --save bahai-term-phoneme
+npm install --save bahai-autocorrect
 ```
 
 ### Functionality
