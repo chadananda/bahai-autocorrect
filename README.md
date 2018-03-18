@@ -11,7 +11,7 @@ npm install --save bahai-autocorrect
 ``` Javascript
 var bac = require('bahai-autocorrect');
 
-bac.correct(str)
+var fixedStr = bac.correct(str)
 // Identifies and corrects common Baha'i term misspellings. Usually won't corrupt HTML.
 // for example: bac.correct("Akb^ar Babi Mulla Husayn")
 // output: Akbár Bábí Mullá Ḥusayn

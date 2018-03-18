@@ -19,8 +19,8 @@ var _autoCorrectBahai = function(str, stripTags) {
     .replace(/\^a/g, 'á').replace(/\^A/g, 'Á')
     .replace(/\^i/g, 'í').replace(/\^I/g, 'Í')
     .replace(/\^u/g, 'ú').replace(/\^U/g, 'Ú')
-    // underscores _sh _kh _zh _th _gh _ch
-    .replace(/{\\"(([csghzkdt]){1,2})\{\\ /gi, '<u>$1</u>')
+    // underscores sh kh zh th gh ch
+    .replace(/{\\"(([csghzkdt]){1,2})\{\\ /gi, '<u>$1</u>') // for glyph format {\"Dh{\ ??
     .replace(/<u>([csghzkdt]h)([csghzkdt]h)<\/u>/ig, '<u>$1</u><u>$2</u>')
     .replace(/([csghzkdt])_(h)/ig, '<u>$1$2</u>')
     // ‘Ayns
@@ -30,30 +30,30 @@ var _autoCorrectBahai = function(str, stripTags) {
     .replace(/\{\\\"(.*?)\{\\/g, '<i>$1</i>')
     // indents
     .replace(/\{\\\(/g, '\t').replace(/\{\\\!/g, '\t')
-    // footnote marker
-    .replace(/[]*\\\*[ ]*/g, '<fn> ')
-    .replace(/\/\*/g, '<fn> ')
+    // // footnote marker
+    // .replace(/[]*\\\*[ ]*/g, '<fn> ')
+    // .replace(/\/\*/g, '<fn> ')
     // add a space before marker if preceded by letter or quote
-    .replace(/([^\.\,\;\:\)\!\?])<fn>/, '$1 <fn>')
-    // now the footnote lines
-    .replace(/^[\t ]*\+F([1-9])[ ]*(.*?)$/gm, '<fn$1>$2</fn$1>')
-    .replace(/<\/fn1>\s+<fn1>/gm, '\n\t')
-    .replace(/<\/fn2>\s+<fn2>/gm, '\n\t')
-    .replace(/<\/fn3>\s+<fn3>/gm, '\n\t')
-    .replace(/<\/fn3>\s+<fn3>/gm, '\n\t');
+    // .replace(/([^\.\,\;\:\)\!\?])<fn>/, '$1 <fn>')
+    // // now the footnote lines
+    // .replace(/^[\t ]*\+F([1-9])[ ]*(.*?)$/gm, '<fn$1>$2</fn$1>')
+    // .replace(/<\/fn1>\s+<fn1>/gm, '\n\t')
+    // .replace(/<\/fn2>\s+<fn2>/gm, '\n\t')
+    // .replace(/<\/fn3>\s+<fn3>/gm, '\n\t')
+    // .replace(/<\/fn3>\s+<fn3>/gm, '\n\t');
   // unnumbered page markers
-  var pgcounter = 0;
-  str = str.replace(/[\s]+\+P[\s+]([a-z\+])/g, ' <_pg_> $1')
-    .replace(/[\s]+\+P/g, ' <_pg_>\n\n')
-    .replace(/<_pg_>[\s+]<_pg_>/g, '<_pg_><_pg_>')
-    // replace unumbered page markers with numbered page markers
-    .replace(/<_pg_>/g, function() {
-      pgcounter++;
-      return "<p" + pgcounter + ">";
-    })
-    // remove multiple page markers after numbering them
-    .replace(/<p.*?>\s*<p.*?>\s*(<p.*?>)/gm, '$1')
-    .replace(/<p.*?>\s*(<p.*?>)/gm, '$1');
+  // var pgcounter = 0;
+  // str = str.replace(/[\s]+\+P[\s+]([a-z\+])/g, ' <_pg_> $1')
+  //   .replace(/[\s]+\+P/g, ' <_pg_>\n\n')
+  //   .replace(/<_pg_>[\s+]<_pg_>/g, '<_pg_><_pg_>')
+  //   // replace unumbered page markers with numbered page markers
+  //   .replace(/<_pg_>/g, function() {
+  //     pgcounter++;
+  //     return "<p" + pgcounter + ">";
+  //   })
+  //   // remove multiple page markers after numbering them
+  //   .replace(/<p.*?>\s*<p.*?>\s*(<p.*?>)/gm, '$1')
+  //   .replace(/<p.*?>\s*(<p.*?>)/gm, '$1');
   // some odd junk
   str = str.replace(/\{\\\#/g, '').replace(/\{\\/g, '');
   // end deglyph
