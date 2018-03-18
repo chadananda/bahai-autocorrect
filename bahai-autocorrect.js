@@ -20,9 +20,9 @@ var _autoCorrectBahai = function(str, stripTags) {
     .replace(/\^i/g, 'í').replace(/\^I/g, 'Í')
     .replace(/\^u/g, 'ú').replace(/\^U/g, 'Ú')
     // underscores _sh _kh _zh _th _gh _ch
-    .replace(/{\\"(([csghzkdt]h){1,2})\{\\ /gi, '<u>$1</u>')
+    .replace(/{\\"(([csghzkdt]){1,2})\{\\ /gi, '<u>$1</u>')
     .replace(/<u>([csghzkdt]h)([csghzkdt]h)<\/u>/ig, '<u>$1</u><u>$2</u>')
-    .replace(/_([csghzkdt]h)/ig, '<u>$1</u>')
+    .replace(/([csghzkdt])_(h)/ig, '<u>$1$2</u>')
     // ‘Ayns
     .replace(/\`/g, '‘').replace(/\\n/g, '‘')
     // em and i
