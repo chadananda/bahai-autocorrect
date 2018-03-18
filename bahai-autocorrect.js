@@ -455,6 +455,8 @@ var _autoCorrectBahai = function(str, stripTags) {
       // replace normal case version
       // var reg = new RegExp(find + '([^a-záíú])', 'g');
       // str = str.replace(reg, repl + '$1');
+      var reg = new RegExp(find, 'g');
+      str = str.replace(reg, repl);
       // replace plural version
       reg = new RegExp(find + 's([^a-záíú])', 'g');
       str = str.replace(reg, repl + 's$1');
