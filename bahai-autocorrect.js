@@ -224,7 +224,7 @@ var _autoCorrectBahai = function(str, stripTags) {
     // Mashad
     .replace(/Mashad/g, 'Ma<u>sh</u>had')
     // Baghdad
-    // .replace(/Bag[h]?d[aá]d/g, 'Ba<u>gh</u>dád')
+    .replace(/Bag[h]?d[aá]d/g, 'Ba<u>gh</u>dád')
     // Babylon
     .replace(/B[aá]b([^a-zá\-])/g, 'Bab$1')
     // Masra’íh // Madrih
@@ -447,23 +447,27 @@ var _autoCorrectBahai = function(str, stripTags) {
     // Khodabaksh
     ''
   ];
-  CommonMispellings.forEach(function(item) {
-    if (item.split(',').length == 2) {
-      var find = item.split(',').shift().trim();
-      var repl = item.split(',').pop().trim();
-      // replace normal case version
-      var reg = new RegExp(find + '([^a-záíú])', 'g');
-      str = str.replace(reg, repl + '$1');
-      // replace plural version
-      reg = new RegExp(find + 's([^a-záíú])', 'g');
-      str = str.replace(reg, repl + 's$1');
-      // uppercase version
-      find = find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
-      repl = repl.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
-      reg = new RegExp(find + '([^A-ZÁÍÚ])', 'g');
-      str = str.replace(reg, repl + '$1');
-    }
-  });
+
+  // CommonMispellings.forEach(function(item) {
+  //   if (item.split(',').length == 2) {
+  //     var find = item.split(',').shift().trim();
+  //     var repl = item.split(',').pop().trim();
+  //     // replace normal case version
+  //     var reg = new RegExp(find + '([^a-záíú])', 'g');
+  //     str = str.replace(reg, repl + '$1');
+  //     // replace plural version
+  //     reg = new RegExp(find + 's([^a-záíú])', 'g');
+  //     str = str.replace(reg, repl + 's$1');
+  //     // uppercase version
+  //     find = find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
+  //     repl = repl.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
+  //     reg = new RegExp(find + '([^A-ZÁÍÚ])', 'g');
+  //     str = str.replace(reg, repl + '$1');
+  //   }
+  // });
+
+
+
   // ‘Abdu’l- Baha[]
   // ‘Abdu’l- Baha’s
   // Bab
