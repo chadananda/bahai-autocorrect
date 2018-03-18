@@ -224,7 +224,7 @@ var _autoCorrectBahai = function(str, stripTags) {
     // Mashad
     .replace(/Mashad/g, 'Ma<u>sh</u>had')
     // Baghdad
-    .replace(/Bag[h]?d[aá]d/g, 'Ba<u>gh</u>dád')
+    // .replace(/Bag[h]?d[aá]d/g, 'Ba<u>gh</u>dád')
     // Babylon
     .replace(/B[aá]b([^a-zá\-])/g, 'Bab$1')
     // Masra’íh // Madrih
