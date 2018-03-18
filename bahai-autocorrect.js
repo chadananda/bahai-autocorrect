@@ -442,7 +442,7 @@ var _autoCorrectBahai = function(str, stripTags) {
     'I[sṣ]f[aá]h[aá]n[ií], Iṣfahání',
     'I[sṣ]f[aá]h[aá]n, Iṣfahán',
     'Ba(<u>)?gh(</u>)?d[aá]d[ií], Ba<u>gh</u>dádí',
-    'Ba(<u>)?gh(</u>)?d[aá]d, Ba<u>gh</u>dád',
+    // 'Ba(<u>)?gh(</u>)?d[aá]d, Ba<u>gh</u>dád',
     // Kheir-ol-Gara
     // Khodabaksh
     ''
