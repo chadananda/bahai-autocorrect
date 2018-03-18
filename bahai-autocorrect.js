@@ -448,23 +448,23 @@ var _autoCorrectBahai = function(str, stripTags) {
     ''
   ];
 
-  // CommonMispellings.forEach(function(item) {
-  //   if (item.split(',').length == 2) {
-  //     var find = item.split(',').shift().trim();
-  //     var repl = item.split(',').pop().trim();
-  //     // replace normal case version
-  //     var reg = new RegExp(find + '([^a-záíú])', 'g');
-  //     str = str.replace(reg, repl + '$1');
-  //     // replace plural version
-  //     reg = new RegExp(find + 's([^a-záíú])', 'g');
-  //     str = str.replace(reg, repl + 's$1');
-  //     // uppercase version
-  //     find = find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
-  //     repl = repl.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
-  //     reg = new RegExp(find + '([^A-ZÁÍÚ])', 'g');
-  //     str = str.replace(reg, repl + '$1');
-  //   }
-  // });
+  CommonMispellings.forEach(function(item) {
+    if (item.split(',').length == 2) {
+      var find = item.split(',').shift().trim();
+      var repl = item.split(',').pop().trim();
+      // replace normal case version
+      var reg = new RegExp(find + '([^a-záíú])', 'g');
+      str = str.replace(reg, repl + '$1');
+      // replace plural version
+      // reg = new RegExp(find + 's([^a-záíú])', 'g');
+      // str = str.replace(reg, repl + 's$1');
+      // uppercase version
+      find = find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
+      repl = repl.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
+      reg = new RegExp(find + '([^A-ZÁÍÚ])', 'g');
+      str = str.replace(reg, repl + '$1');
+    }
+  });
 
 
 
