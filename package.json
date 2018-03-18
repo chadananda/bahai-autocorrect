@@ -1,6 +1,6 @@
 {
   "name": "bahai-autocorrect",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple UTF-8 autocorrect for the most common Baha'i terms",
   "main": "bahai-autocorrect.js",
   "scripts": {
