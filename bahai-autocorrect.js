@@ -456,8 +456,8 @@ var _autoCorrectBahai = function(str, stripTags) {
       var reg = new RegExp(find + '([^a-záíú])', 'g');
       str = str.replace(reg, repl + '$1');
       // replace plural version
-      reg = new RegExp(find + 's([^a-záíú])', 'g');
-      str = str.replace(reg, repl + 's$1');
+      // reg = new RegExp(find + 's([^a-záíú])', 'g');
+      // str = str.replace(reg, repl + 's$1');
       // uppercase version
       // find = find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
       // repl = repl.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s');
