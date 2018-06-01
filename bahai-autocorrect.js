@@ -58,245 +58,210 @@ var _autoCorrectBahai = function(str, stripTags) {
   str = str.replace(/\{\\\#/g, '').replace(/\{\\/g, '');
   // end deglyph
   // now replace common terms
-  str = str.replace(/Bah[aá]['’‘]?[ií]s/g, 'Bahá’ís')
-    .replace(/Bah[aá]['’‘]?[ií]/g, 'Bahá’í')
-    .replace(/BAH[AÁ]['’‘]?[IÍ]/g, 'BAHÁ’Í')
-    .replace(/['’‘]?Abd[uoe]['’‘]?l[-]?[ ]?B[ea]h[aá]/g, '‘Abdu’l-Bahá')
-    .replace(/['’‘]?ABD[UOE]['’‘]?L[-]?[ ]?B[AE]H[AÁ]/g, '‘ABDU’L-BAHÁ')
-    // Abdul
-    .replace(/['’‘]?Abd[uo]['’‘]?l/g, '‘Abdu’l').replace(/['’‘]?ABD[UO]['’‘]?L/g, '‘ABDU’L')
-    .replace(/['’‘]?Abb[aá]s/g, '‘Abbás').replace(/['’‘]?ABB[AÁ]S/g, '‘ABBÁS')
-    .replace(/All[aá]h[–-]?[uoOU][–-][Aa]bh[aá]/g, 'Alláh–u–Abhá')
-    .replace(/ALL[AÁ]H[–-]?[UuOo][–-]?ABH[AÁ]/g, 'ALLÁH–U–ABHÁ')
-    // Baha-Ullah
-    .replace(/Bah[aá][ -]?['’‘]?[UOuo0]['’‘]?[lL]+[aá]h/g, 'Bahá’u’lláh')
-    .replace(/BAH[AÁ][ -]?['’‘]?[UO0]['’‘]?LL[AÁ]H/g, 'BAHÁ’U’LLÁH')
-    .replace(/B[aá]b[ií]([ <\.\?\!\,\]\)\'’‘\s])/g, 'Bábí$1').replace(/B[AÁ]B[IÍ]([ <\.\?\!\,\]\)\'’‘])/g, 'BÁBÍ$1')
-    .replace(/B[aá]b([ <\.\?\!\,\]\)\'’‘s])/g, 'Báb$1').replace(/B[AÁ]B([ <\.\?\!\,\]\)\'’‘S])/g, 'BÁB$1')
-    .replace(/['‘’]?A[kc][kc]a/g, '‘Akká').replace(/['‘’]?A[KC][KC]A/g, '‘AKKÁ')
-    .replace(/K[h]?[aá]n[n]?[uo]m/g, '<u>Kh</u>ánum').replace(/K[H]?[AÁ]N[N]?[UO]M/g, '<U>KH</U>ÁNUM')
-    .replace(/Bah[ií]y[y]?[ia]h/g, 'Bahíyyih').replace(/BAH[IÍ]Y[Y]?[IA]H/g, 'BAHÍYYIH')
-    .replace(/Dia[’']iyyih/g, 'Ḍíyá’íyyih')
-    .replace(/Mirza/g, 'Mírzá').replace(/MIRZA/g, 'MÍRZÁ')
-    .replace(/H[áa]d[íi]/g, 'Hádí')
-    .replace(/Sh[íi]r[áa]z[íi]/g, '<u>Sh</u>írází')
-    .replace(/Shog[h]i[e]?/g, 'Shoghi').replace(/SHOG[H]I[E]?/g, 'SHOGHI')
-    .replace(/Effendi[e]?/g, 'Effendi').replace(/EFFENDI[E]?/g, 'EFFENDI')
-    .replace(/Ahmad/g, 'Aḥmad').replace(/AHMAD/g, 'AḤMAD')
-    .replace(/[HḤ]as[s]?an/g, 'Ḥasan').replace(/[HḤ]AS[S]?AN/g, 'ḤASAN')
-    // Hossein
-    .replace(/[HḤ][uo]s[s]?[ea][yi]n/g, 'Ḥusayn').replace(/[HḤ][UO]SAYN/g, 'ḤUSAYN')
-    .replace(/Sh[aá]h([^a-z])/g, '<u>Sh</u>áh$1').replace(/SH[AÁ]H([^A-Z])/g, '<U>SH</U>ÁH$1')
-    .replace(/B[úu]shi[h]?r/g, 'Bú<u>sh</u>ihr')
-    .replace(/Sh[íie]r[áa]z/g, '<u>Sh</u>íráz')
-    .replace(/Nouri([^a-z])/g, 'Núrí$1').replace(/NOURI([^a-z])/g, 'NÚRÍ$1')
-    .replace(/Yazdi/g, 'Yazdí').replace(/YAZDI/g, 'YAZDÍ')
-    .replace(/[QK][uo][‘'’]?r[‘'’]?[aá][aá]?n/g, 'Qur’án').replace(/[QK][UO]R[‘'’]?[AÁ][AÁ]?N/g, 'QUR’ÁN')
-    .replace(/Abha/g, 'Abhá').replace(/ABHA/g, 'ABHÁ')
-    .replace(/M[ao]h[h]?[oa]met/g, 'Muḥammad').replace(/M[AO]H[OA]MET/g, 'MUḤAMMAD')
-    .replace(/M[uo]h[h]?am[m]?[aeá]d/g, 'Muḥammad').replace(/M[UO]HAM[M]?[AE]D/g, 'MUḤAMMAD')
-    .replace(/Muḥammad[ea]n/g, 'Muḥammadan')
-    .replace(/Kuly /g, 'Qulí ')
-    .replace(/[‘’']?Ali([ -\.\!\?<])/g, '‘Alí$1').replace(/[‘’']?ALI([ -\.\!\?<])/g, '‘ALÍ$1')
-    .replace(/Kitab/g, 'Kitáb').replace(/KITAB/g, 'KITÁB')
-    .replace(/[IE][qkg][hu]?[aá]n/g, 'Íqán').replace(/[IE][QK][H]?[AÁ]N/g, 'ÍQÁN')
-    .replace(/Ruhangiz/g, 'Rúhangíz')
-    .replace(/R[o]?[uú][hḥ][aá]/g, 'Rúḥá')
-    .replace(/R[o]?[uú][ḥh][iíy]/g, 'Rúḥí')
-    .replace(/Jalal/g, 'Jalál')
-    .replace(/Fa[zd][ei]l/g, 'Faḍil')
-    .replace(/Fa[zd]l/g, 'Faḍl')
-    .replace(/Ri[dḍz][h]?[vw][áa][a]?n/g, 'Riḍván').replace(/RI[DḌZ][VW][ÁA][A]?N/g, 'RIḌVÁN')
-    // Mash-rak-ul-azkar   // Mashrak-el-Azcar
-    .replace(/Mash[\-]?r[iea][qk][\-]?[uoe][’'‘]?l[\–\- ]?[Aa][zd][h]?[kc][aá]r/g, 'Ma<u>sh</u>riqu’l-A<u>dh</u>kár')
-    .replace(/MASHR[IE]Q[UO][’'‘]L[\–\- ]?[ ]?[AA][ZD][H]?K[AÁ]R/g, 'MA<U>SH</U>RIQU’L-A<U>DH</U>KÁR')
-    .replace(/Tamad[d]?[uo]n[ ]?[uoa]['’‘]?l[ -][Mm][uo]lk/g, 'Tamaddunu’l-Mulk')
-    // Shaykh Ahmad Kazim
-    .replace(/Shaykh/g, '<u>Sh</u>ay<u>kh</u>').replace(/SHAYKH/g, '<u>SH</u>AY<u>KH</u>')
-    .replace(/K[aá][ẓz]im/g, 'Káẓim').replace(/K[AÁ][ẒZ]IM/g, 'KÁẒIM')
-    .replace(/R[ea]sht/g, 'Ra<u>sh</u>t').replace(/R[EA]SHT/g, 'RA<u>SH</u>T')
-    // Kamál Páshá
-    .replace(/Kam[áa]l/g, 'Kamál').replace(/KAM[ÁA]L/g, 'KAMÁL')
-    .replace(/P[aá]sh[aá]/g, 'Pá<u>sh</u>á')
-    //Moneer
-    .replace(/M[uo]n[iíe][e]?r/g, 'Munír')
-    .replace(/M[uo]n[iíe][e]?r[ai][h]?/g, 'Munírih')
-    //Muḥyiddin
-    //Moheyddin
-    .replace(/M[ou][hḥ][e]?y[ie]?d[-]?[dD][ií]n/g, 'Muḥyi’d-Dín')
-    // Teheran
-    .replace(/[TṬ][ie]h[e]?r[aá]n/g, 'Ṭihrán').replace(/T[IE]HR[AÁ]N/g, 'ṬIHRÁN')
-    // Nouraddin Zaine
-    .replace(/Zaine/g, 'Zayn').replace(/ZAINE/g, 'ZAYN')
-    // Nourredin
-    .replace(/N[o]?ur[r]?[aie]d[- ]?[dD]?[ií]n/g, 'Núri’d-Dín').replace(/N[O]?UR[AIE]D[D]?IN/g, 'NÚRI’D-DÍN')
-    // Suleyman Khan Lutfullah Hakim
-    .replace(/S[uo]l[ea]ym[aá]n/g, 'Sulaymán')
-    .replace(/Kh[aá]n([^a-záí\-])/g, '<u>Kh</u>án$1')
-    .replace(/L[uo][tṭ]f[’'‘]?[uoUO][’'‘]?[-]?[ ]?ll[aá]h/g, 'Luṭfu’lláh')
-    .replace(/[HḤ][aá]k[ií]m/g, 'Ḥakím')
-    // Taki
-    .replace(/Ta[qkg][íi]([^a-z])/g, 'Taqí$1')
-    // Said
-    .replace(/(Port\s+)Said/g, "$1Sa‘íd").replace(/(PORT\s+)SAID/g, "$1SA‘ÍD")
-    .replace(/([a-z]) Sa['‘’][ií]d/g, '$1 Sa‘íd').replace(/([A-Z]) SA['‘’][IÍ]D/g, '$1 SA‘ÍD')
-    // Abul Faḍl
-    .replace(/Abu[’‘']?l[- ]Fa[ḍz]l/g, 'Abu’l-Faḍl').replace(/ABU[’‘']?L[ -]FA[ḌZ]L/g, 'ABU’L-FAḌL')
-    // Násiri’d-Dín
-    .replace(/N[aá][sṣ]iri[’'‘]d[-]?D[ií]n/g, 'Náṣiri’d-Dín')
-    // Hayder-‘Alí
-    .replace(/[ḤH]a[yi]d[ae]r[- ][‘']?Al[íi]/g, 'Ḥaydar-‘Alí')
-    // Moneera <u>Kh</u>ánum
-    .replace(/M[ou]n[ei][e]?r[aie][h]?/g, 'Munírih')
-    // Khorassani  Khorassan
-    .replace(/Kh[uo]r[aá]s[s]?[aá]n[íi]/g, '<u>Kh</u>urasání').replace(/Kh[uo]r[aá]s[s]?[aá]n/g, '<u>Kh</u>urasán')
-    // Jenabi Haji
-    .replace(/J[ie]n[aá]b[ií]/g, 'Jinábí')
-    .replace(/[HḤ][aá][d]?[j]?j[ií]/g, 'Ḥájí').replace(/[HḤ][AÁ][D]?[J]?J[IÍ]/g, 'ḤÁJÍ')
-    // Abdul
-    .replace(/[‘'’]?Abd[uo][‘'’]?l /g, '‘Abdu’l ').replace(/[‘'’]?ABD[UO][‘'’]?L /g, '‘ABDU’L ')
-    // Nour
-    .replace(/N[o]?[uú]r[ií] /g, 'Núrí ').replace(/N[o]?[uú]r /g, 'Núr ')
-    // Assad’Ullah  Enya’Ullah  Enyat’Ullah Enya’Ullah Nurullah
-    // Assad-Ullah
-    .replace(/As[s]?ad[’'‘\- ]?[uoOU][’'‘]?ll[aá]h?/g, 'Asadu’lláh')
-    .replace(/[’'‘]?[IE]n[áa]?y[aá]?t?[’'‘]?[uOUo][’'‘]?ll[áa]h/g, '‘Ináyatu’lláh')
-    .replace(/N[uú]r[’'‘]?[uoOU][’'‘]?ll[aá]h?/g, 'Núru’lláh')
-    .replace(/[‘’']?Az[ieí][e]?z[’'‘]?[uoOU][’'‘]?ll[aá]h?/g, '‘Azízu’lláh')
-    // Ruollah Rúḥu’lláh
-    .replace(/R[úu][ḥh]?[uo][’'‘]?ll[áa]h/g, 'Rúḥu’lláh')
-    // Kharullah
-    .replace(/K[h]?[ae][yi]?r[’'‘]?[uoOU][’'‘]?ll[aá]h?/g, '<u>Kh</u>ayru’lláh')
-    // Abu'l-Qasim
-    .replace(/Ab[úu][’'‘]?l[- ]Q[áa]sim/g, 'Abú’l-Qásim')
-    // Bahje
-    .replace(/B[ae][h]?j[íei]/g, 'Bahjí')
-    .replace(/M[ae][ḥh]m[úo][o]?d/g, 'Maḥmúd')
-    // Subh-i-Azal  Subi-Azel
-    .replace(/[ṢS][uo]b[ḥh]?[- ]?[ie][- ][AE]z[ae]l/g, 'Ṣubḥ-i-Azal')
-    .replace(/Y[ae][ḥh]y[áa]/g, 'Yaḥyá')
-    // Naw Ruz
-    .replace(/N[ao][w]?[- ][Rr][uú]z/g, 'Naw-Rúz')
-    // Naurooz
-    .replace(/N[a][uw]?[ \-]?[Rr][uoú][uo]?z/g, 'Naw-Rúz')
-    // Mazindaran
-    .replace(/M[áa]z[ie]nd[ae]r[aá]n/g, 'Mázindarán')
-    .replace(/B[ae]y[aáe]n/g, 'Bayán')
-    // Tahirih
-    .replace(/[ṬT][aá]h[ie]r[ai][hy]?[y]?/g, 'Ṭáhirih')
-    // Shiahs  Shi’ih
-    .replace(/Sh[ií][ií]?[’'‘]?[aei]h/g, '<u>Sh</u>í‘ah') // 54 in GPB
-    //.replace(/Sh[ií][ií]?[’'‘]?[i]h/g, '<u>Sh</u>í‘ih') // 0 in GPB
-    .replace(/S[uo]nn[ií]/g, 'Sunní')
-    // Siyah-Chal
-    .replace(/S[íi]y[aá][h]?[- ]Ch[aá]l/g, 'Síyáh-<u>Ch</u>ál')
-    // Sullimaniyyeh - Sulimaniyih
-    .replace(/S[uo]l[eia][y]?m[aá]n[ií]y[y]?[ai][h]?/g, 'Sulaymáníyyih')
-    // Afnan Aghsan
-    .replace(/Afn[aá]n/g, 'Afnán')
-    .replace(/Aghs[aá]n/g, 'A<u>gh</u>ṣán')
-    .replace(/Isl[aá]m/g, 'Islám').replace(/ISL[AÁ]M/g, 'ISLÁM')
-    .replace(/Jam[aá]l/g, 'Jamál')
-    // Samandari
-    .replace(/Samandar[ií]/g, 'Samandarí')
-    // Huquk
-    .replace(/[ḤH][uo][qqk][uú][kgq]/g, 'Ḥuqúq')
-    //Majid
-    .replace(/Maj[ií]d/g, 'Majíd')
-    // Qajar
-    .replace(/[QG][aá]j[aá]r/g, 'Qájár')
-    // Tabarsi
-    .replace(/[ṬT]ab[áa]rs[íi]/g, 'Ṭabarsí')
-    // Navvab
-    .replace(/Nav[v]?[aá]b/g, 'Navváb')
-    // Nabil
-    .replace(/Nab[ií]l/g, 'Nabíl')
-    // `Alí-Akbar Furútan
-    .replace(/[‘'’]?Al[íi][- ]Akb[aá]r/g, '‘Alí-Akbar')
-    .replace(/Fur[úu]t[áa]n/g, 'Furútan')
-    .replace(/Yaz[ií]d/g, 'Yazíd')
-    // Surah
-    .replace(/S[úu]r[aei]h/g, 'Súrah')
-    .replace(/All[áa]h/g, 'Alláh')
-    // Haziratu’l-Quds
-    .replace(/[ḤH]a[zẓ][íi]ratu[’'‘]?l[- ][QGK][uo]ds/g, 'Ḥaẓíratu’l-Quds') //
-    .replace(/[ḤH]a[zẓ][íi]ra[h]?/g, 'Ḥaẓíra') //
-    // Mashad
-    .replace(/Mashad/g, 'Ma<u>sh</u>had')
-    // Baghdad
-    .replace(/Bag[h]?d[aá]d/g, 'Ba<u>gh</u>dád')
-    // Babylon
-    .replace(/B[aá]b([^a-zá\-])/g, 'Bab$1')
-    // Masra’íh // Madrih
-    .replace(/Ma[sd]r[aá]?[‘'’]?[ií][h]?([^a-z])/g, 'Masra‘ih$1')
-    // Imam
-    .replace(/Im[aá]m/g, 'Imám')
-    // Surayt’ul-Haykl  Suratu'l-Haykal
-    .replace(/S[úu]ra[y]?[t]?[‘'’]?[uo][‘'’]?l[- ]Hayk[a]?l/g, 'Súratu’l-Haykal')
-    // Hamíd
-    .replace(/[ḤH]am[ií]d/g, 'Ḥamíd')
-    // Hafiz
-    .replace(/[ḤH][áa]f[ie][zẓ]/g, 'Ḥáfiẓ')
-    // Hádíth
-    .replace(/[ḤH][áa]d[ií][i]?th/g, 'Ḥadí<u>th</u>')
-    // Zaman
-    .replace(/Zaman/g, 'Zamán')
-    // Paran
-    .replace(/P[áa]r[áa]n/g, 'Paran')
-    // Rabbani
-    .replace(/Rabb[aá]n[ií]/g, 'Rabbání')
-    // Banani
-    .replace(/Ban[aá]n[ií]/g, 'Banání')
-    // Banani
-    .replace(/Abb[uú]d/g, 'Abbúd')
-    // Banani
-    .replace(/Bah[áa]([^a-záí\-])/g, 'Bahá$1')
-    // Muḥammad Ali
-    .replace(/Muḥammad[- ][‘'’]?Al[íi]/g, 'Muḥammad-‘Alí')
-    .replace(/[AE]zal[íi]s/g, 'Azalís')
-    // Quddus
-    .replace(/Qudd[uú]s/g, 'Quddús')
-    // Quddus
-    .replace(/M[uo]ll[áa][h]?/g, 'Mullá')
-    // Insha’allah
-    .replace(/Insh[áa][‘'’]?all[áa]h/g, 'In<u>sh</u>á’alláh')
-    // Fatimih
-    .replace(/F[áa][ṭt][ie]m[ia]h/g, 'Fáṭimih')
-    // Iṣfahán
-    .replace(/[IE][ṣs][fp][h]?[aá]h[áa]n/g, 'Iṣfahán')
-    // Ásíyih
-    .replace(/[ÁA]s[í][i]?yih/g, 'Ásíyih')
-    // Qayyumu’l-Asma: note, we cannot fix the end of a single-quote phrase
-    .replace(/Qayy[uú]m[uo][‘'’]?l[- ][Aa]sm[aá][‘'’]?/g, 'Qayyúmu’l-Asmá’')
-    // misspellings
-    //Graudian
-    .replace(/G[r]?[a]?u[a]?[r]?dian/g, 'Guardian')
-    .replace(/A[kqh][h]?d[aá]s/g, 'Aqdas').replace(/A[KQH][H]?D[AÁ]S/g, 'AQDAS')
-    .replace(/Administraiton/g, 'Administration')
-    // Rahim
-    .replace(/Ra[ḥh][ií]m/g, 'Raḥím')
-    .replace(/[ÁA]q[aá]/g, 'Áqá')
-    .replace(/Mihd[ií]/g, 'Mihdí')
-    .replace(/Sul[ṭt][aá]n/g, 'Sulṭán')
-    .replace(/K[aá]sh[aá]n/g, 'Ká<u>sh</u>án')
-    // Naqiz
-    .replace(/N[áa][qgk][ai][ḍzd][z]?[ieí][e]?n/g, 'Náqiḍín')
-    .replace(/N[áa][qgk][ai][ḍzd][z]?/g, 'Náqiḍ')
-    // Sayad
-    .replace(/S[ia]y[y]?[ia]d/g, 'Siyyid')
-    // fix the Ayn in case is shows up at the beginning of an attribute value
-    .replace(/([a-z])=‘A/ig, "$1='‘A").replace(/([a-z])=‘I/ig, "$1='‘I");
 
-  // Rules for common misspellings:
-  // - Text to find and text to replace are regex expressions separated by " = "
-  // - To get a backslash in the regex, two backslashes must be used
-  // - English plural and uppercase forms will be replaced automatically
-  // - Separate find and replace on each line by " = "
-  // - Single quotes in find are replaced by regex for any quotation character: "[‘'’]"
-  // - To replace a single quote without other types of quotes, put it as the last character in a character class: "[- ']"
-  // - To replace a hyphen as part of a character class, use it as the first character: "[- ']"
+  // Rules for the list of common misspellings:
+  // "[find] = [replace]"   The basic syntax
+  //
+  // In the [find] section:
+  // \\                     This will become a backslash in the regex
+  // Baha'i                 Will also replace "BAHA'I"
+  // ()                     Any number of word characters [a-záíúA-ZÁÍÚ]* etc.
+  // ...()                  If the () appears at the end of the find section, $1 is implied in the replacement
+  // '                      Replaces any single quote character "[‘'’]"
+  // [...'] OR [']          Replace ONLY a single quote (last character of class)
+  // [-] OR [-...]          Replace hyphen or en-dash "[-–]" (first character of class)
+  // [\\-]                  Replace ONLY a hyphen inside a character class
+  //
+  // In the [replace] section:
+  // $1, $2, etc.           References sets in parentheses
   var CommonMispellings = [
-    "Ja[vw][aá]d = Javád",
+    "Bah[aá]'?[iíI] = Bahá’í",
+    "Bah[aá]'?[iíI]s = Bahá’ís",
+    "'?Abd[uoe]'?l[-]? ?B[ea]h[aá] = ‘Abdu’l-Bahá",
+    "'?Abd[uo]'?l = ‘Abdu’l",
+    "'?Abb[aá]s = ‘Abbás",
+    "All[aá]h[-]?[uoOU][-][Aa]bh[aá] = Alláh-u-Abhá",
+    "Bah[aá][- ]?'?[UOuo0ú]'?[lL]+[aá]h = Bahá’u’lláh",
+    "B[aá]b[ií]s = Bábís",
+    "B[aá]b[ií] = Bábí",
+    "B[aá]b = Báb",
+    "'?A[kc][kc]a = ‘Akká",
+    "Kh?[aá]nn?[uo]m = <u>Kh</u>ánum",
+    "Bah[ií]yy?[ia]h = Bahíyyih",
+    "Dia'iyyih = Ḍíyá’íyyih",
+    "Mirza = Mírzá",
+    "H[áa]d[íi]() = Hádí",
+    "Sh[íi]r[áa]z[ií] = <u>Sh</u>írází",
+    "Sh[íi]r[áa]z() = <u>Sh</u>íráz",
+    "Shogh?ie? = Shoghi",
+    "Effendie? = Effendi",
+    "Ahmad() = Aḥmad",
+    "[HḤ]ass?an() = Ḥasan",
+    "[HḤ][uo]ss?[ea][yi]n() = Ḥusayn",
+    "Sh[aá]h() = <u>Sh</u>áh",
+    "B[úu]shih?r() = Bú<u>sh</u>ihr",
+    "No?ur[ií] = Núrí",
+    "Yazd[ií]() = Yazdí",
+    "[QK][uo]'?r'?[aá][aá]?n() = Qur’án",
+    "Abha = Abhá",
+    "M[ao]hh?[oa]met() = Muḥammad",
+    "M[uo]hh?amm?[aeá]d() = Muḥammad",
+    "Muḥammad[ea]n = Muḥammadan",
+    "Kuly = Qulí",
+    "'?Ali([\\.\\!\\?< \\-]) = ‘Alí$1", // TODO: Why the extra regex?
+    "Kitab() = Kitáb",
+    "[IE][qkg][hu]?[aá]n = Íqán",
+    "Ruhangiz = Rúhangíz",
+    "Ro?[uú][hḥ][aá]() = Rúḥá",
+    "Ro?[uú][ḥh][iíy]() = Rúḥí",
+    "Jalal() = Jalál",
+    "Fa[zd][ei]l() = Faḍil",
+    "Fa[zd]l() = Faḍl",
+    "Ri[dḍz]h?[vw][áa]a?n() = Riḍván",
+    "Mash[-]?r[iea][qk][-]?[uoe]'?l[- ]?[Aa][zd]h?[kc][aá]r = Ma<u>sh</u>riqu’l-A<u>dh</u>kár",
+    "Tamadd?[uo]n ?[uoa]'?l[- ][Mm][uo]lk = Tamaddunu’l-Mulk",
+    "Shaykh = <u>Sh</u>ay<u>kh</u>",
+    "K[aá][ẓz]im() = Káẓim",
+    "R[ea]sht[ií] = Ra<u>sh</u>tí",
+    "R[ea]sht = Ra<u>sh</u>t",
+    "Kam[áa]l() = Kamál",
+    "P[aá]sh[aá] = Pá<u>sh</u>á",
+    "M[uo]n[iíe]e?r() = Munír",
+    "Munír[aie][h]? = Munírih",
+    "M[ou][hḥ]e?y[ie]?d[- ]?[dD][ií]n = Muḥyi’d-Dín",
+    "[TṬ][ie]he?r[aá]n = Ṭihrán",
+    "Zaine = Zayn",
+    "N[o]?urr?[aie]d[- ]?[dD]?[ií]n = Núri’d-Dín",
+    "S[uo]l[ea]ym[aá]n() = Sulaymán",
+    "Kh[aá]n = <u>Kh</u>án",
+    "L[uo][tṭ]f'?[uoUO]'?[-]? ?ll[aá]h = Luṭfu’lláh",
+    "[HḤ][aá]k[ií]m() = Ḥakím",
+    "Ta[qkg][íi] = Taqí",
+    "(Port\\s+)Said = $1Sa‘íd",
+    "\\bSa'[ií]d = Sa‘íd",
+    "Abu'?l[- ]Fa[ḍz]l = Abu’l-Faḍl",
+    "N[aá][sṣ]iri'd[-]?D[ií]n = Náṣiri’d-Dín",
+    "[ḤH]a[yi]d[ae]r[- ][‘']?Al[íi]() = Ḥaydar-‘Alí",
+    "Kh[uo]r[aá]ss?[aá]n[íi] = <u>Kh</u>urasání",
+    "Kh[uo]r[aá]ss?[aá]n = <u>Kh</u>urasán",
+    "J[ie]n[aá]b[ií] = Jinábí",
+    "[HḤ][aá]d?j?j[ií] = Ḥájí",
+    "No?[uú]r[ií] = Núrí",
+    "No?[uú]r  = Núr ",
+    "Ass?ad[- ’‘']?[uoOU]'?ll[aá]h? = Asadu’lláh",
+    "'?[IE]n[áa]?y[aá]?t?'?[uOUo]'?ll[áa]h = ‘Ináyatu’lláh",
+    "N[uú]r'?[uoOU]'?ll[aá]h? = Núru’lláh",
+    "'?Az[ieí][e]?z'?[uoOU]'?ll[aá]h? = ‘Azízu’lláh",
+    "R[úu][ḥh]?[uo]'?ll[áa]h = Rúḥu’lláh",
+    "K[h]?[ae][yi]?r'?[uoOU]'?ll[aá]h? = <u>Kh</u>ayru’lláh",
+    "Ab[úu]'?l[- ]Q[áa]sim = Abú’l-Qásim",
+    "B[ae]h?j[íei] = Bahjí",
+    "M[ae][ḥh]m[úo]o?d = Maḥmúd",
+    "[ṢS][uo]b[ḥh]?[- ]?[ie][- ][AE]z[ae]l = Ṣubḥ-i-Azal",
+    "Y[ae][ḥh]y[áa] = Yaḥyá",
+    "N[ao][w]?[- ][Rr][uú]z = Naw-Rúz",
+    "N[a][uw]?[- ]?[Rr][uoú][uo]?z = Naw-Rúz",
+    "M[áa]z[ie]nd[ae]r[aá]n = Mázindarán",
+    "M[áa]z[ie]nd[ae]r[aá]n[ií] = Mázindarání",
+    "B[ae]y[aáe]n = Bayán",
+    "[ṬT][aá]h[ie]r[ai][hy]?[y]? = Ṭáhirih",
+    "Sh[ií][ií]?'?[aei]h = <u>Sh</u>í‘ah", // 54 in GPB
+    //.replace(/Sh[ií][ií]?'?[i]h/g, '<u>Sh</u>í‘ih') // 0 in GPB
+    "S[uo]nn[ií]() = Sunní",
+    "S[íi]y[aá][h]?[- ]Ch[aá]l = Síyáh-<u>Ch</u>ál",
+    "S[uo]l[eia][y]?m[aá]n[ií]y[y]?[ai][h]? = Sulaymáníyyih",
+    // Afnan Aghsan
+    "Afn[aá]n() = Afnán",
+    "Aghs[aá]n() = A<u>gh</u>ṣán",
+    "Isl[aá]m() = Islám",
+    "Jam[aá]l() = Jamál",
+    // Samandari
+    "Samandar[ií]() = Samandarí",
+    // Huquk
+    "[ḤH][uo][qqk][uú][kgq]() = Ḥuqúq",
+    //Majid
+    "Maj[ií]d = Majíd()",
+    // Qajar
+    "[QG][aá]j[aá]r = Qájár",
+    // Tabarsi
+    "[ṬT]ab[áa]rs[íi] = Ṭabarsí",
+    // Navvab
+    "Nav[v]?[aá]b = Navváb",
+    // Nabil
+    "Nab[ií]l() = Nabíl",
+    // `Alí-Akbar Furútan
+    "'?Al[íi][- ]Akb[aá]r = ‘Alí-Akbar",
+    "Fur[úu]t[áa]n = Furútan",
+    "Yaz[ií]d() = Yazíd",
+    // Surah
+    "S[úu]r[aei]h = Súrah",
+    "\\bAll[áa]h = Alláh",
+    // Haziratu’l-Quds
+    "[ḤH]a[zẓ][íi]rat'?u'?l[- ][QGK][uo]ds = Ḥaẓíratu’l-Quds", //
+    "[ḤH]a[zẓ][íi]ra[h]? = Ḥaẓíra", //
+    // Mashad
+    "Mashad = Ma<u>sh</u>had",
+    // Baghdad
+    "Bag[h]?d[aá]d() = Ba<u>gh</u>dád",
+    // Masra’íh // Madrih
+    "Ma[sd]r[aá]?'?[ií][h]? = Masra‘ih",
+    // Imam
+    "Im[aá]m() = Imám",
+    // Surayt’ul-Haykl  Suratu'l-Haykal
+    "S[úu]ra[y]?[t]?'?[uo]'?l[- ]Hayk[a]?l = Súratu’l-Haykal",
+    // Hamíd
+    "[ḤH]am[ií]d() = Ḥamíd",
+    // Hafiz
+    "[ḤH][áa]f[ie][zẓ] = Ḥáfiẓ",
+    // Hádíth
+    "[ḤH][áa]d[ií][i]?th = Ḥadí<u>th</u>",
+    // Zaman
+    "Zaman = Zamán",
+    // Paran
+    "P[áa]r[áa]n = Paran",
+    // Rabbani
+    "Rabb[aá]n[ií]() = Rabbání",
+    // Banani
+    "Ban[aá]n[ií]() = Banání",
+    "Abb[uú]d = Abbúd",
+    "Bah[áa] = Bahá",
+    // Muḥammad Ali
+    "Muḥammad[- ]'?Al[íi] = Muḥammad-‘Alí",
+    "[AE]zal[íi]() = Azalí",
+    // Quddus
+    "Qudd[uú]s() = Quddús",
+    // Quddus
+    "M[uo]ll[áa][h]? = Mullá",
+    // Insha’allah
+    "Insh[áa]'?all[áa]h = In<u>sh</u>á’alláh",
+    // Fatimih
+    "F[áa][ṭt][ie]m[ia]h = Fáṭimih",
+    // Iṣfahán
+    "[IE][ṣs][fp][h]?[aá]h[áa]n = Iṣfahán",
+    "Iṣfahán[ií] = Iṣfahání",
+    // Ásíyih
+    "[ÁA]sí[i]?yih = Ásíyih",
+    // Qayyumu’l-Asma: note, we cannot fix the end of a single-quote phrase
+    "Qayy[uú]m[uo]'?l[- ][Aa]sm[aá]'? = Qayyúmu’l-Asmá’",
+    //Graudian
+    "G[r]?[a]?u[a]?[r]?dian = Guardian",
+    "A[kqh][h]?d[aá]s = Aqdas",
+    "Administraiton = Administration",
+    // Rahim
+    "Ra[ḥh][ií]m() = Raḥím",
+    "\\b[ÁA]q[aá]() = Áqá",
+    "Mihd[ií]() = Mihdí",
+    "Sul[ṭt][aá]n() = Sulṭán",
+    "K[aá]sh[aá]n = Ká<u>sh</u>án",
+    "K[aá]sh[aá]n[ií] = Ká<u>sh</u>ání",
+    // Naqiz
+    "N[áa][qgk][ai][ḍzd][z]?[ieí][e]?n = Náqiḍín",
+    "N[áa][qgk][ai][ḍzd][z]?() = Náqiḍ",
+    // Sayad
+    "S[ia]y[y]?[ia]d() = Siyyid",
+    
+    // OLD LIST
+    "Ja[vw][aá]d() = Javád",
     "Mir = Mír",
     "Golam = Qulam",
     "Hasssan = Ḥasan",
@@ -324,8 +289,8 @@ var _autoCorrectBahai = function(str, stripTags) {
     "Sheik = <u>Sh</u>ay<u>kh</u>",
     "sheik = <u>sh</u>ay<u>kh</u>",
     "R[ei][zdḍ][aá] = Riḍá",
-    "Hajeb-ed-Doulet = Ḥájibu’d-Dawlih",
-    "Nayeb-us-Saltaneh = Ná’ibu’s-Sulṭánih",
+    "Hajeb[-]ed[-]Doulet = Ḥájibu’d-Dawlih",
+    "Nayeb[-]us[-]Saltaneh = Ná’ibu’s-Sulṭánih",
     "El Qur’án = the Qur’án",
     "Sadek = Sádiq",
     "'?Al[ií] = ‘Alí",
@@ -354,7 +319,7 @@ var _autoCorrectBahai = function(str, stripTags) {
     "Bagher = Báqir",
     "Beyrout = Beruit",
     "'?Abd[uo]'?llah = ‘Abdu’lláh",
-    "Kurrat-[Uu]l-Ayn[e]? = Qurratu’l-Ayn", // Kurrat-ul-ayne
+    "Kurrat[-][Uu]l[-]Ayn[e]? = Qurratu’l-Ayn", // Kurrat-ul-ayne
     "'?Az[ií]z = ‘Azíz",
     "Pasha = Pá<u>sh</u>á",
     "Faran = Fárán",
@@ -413,7 +378,7 @@ var _autoCorrectBahai = function(str, stripTags) {
     "Bahram = Bahrám",
     "'?Ir[áa]q = ‘Iráq",
     "[ÍI]r[aá]n = Írán",
-    "'?Ab[d]?u'?l-'?A[zẓ][ií]m = ‘Abdu’l-‘Aẓím",
+    "'?Ab[d]?u'?l[-]'?A[zẓ][ií]m = ‘Abdu’l-‘Aẓím",
     "[ḤH][uo][qk][uo][-‘’']?ll[aá]h = Ḥuqúqu’lláh",
     "[HḤ]u[qk][úu]qu'?ll[aá]h = Ḥuqúqu’lláh",
     "[HḤ]u[qk][úu]q = Ḥuqúq",
@@ -437,7 +402,7 @@ var _autoCorrectBahai = function(str, stripTags) {
     "Saadi = Sa‘dí",
     "[']?Umar = ‘Umar",
     "Khayyam = <u>Kh</u>ayyám",
-    "Lawh-i-Maqsud = Lawh-i-Maqsúd",
+    "Lawh[-]i[-]Maqsud = Lawh-i-Maqsúd",
     "Rudaki = Rúdakí",
     "Farabi = Fárábí",
     "Parviz = Parvíz",
@@ -445,7 +410,6 @@ var _autoCorrectBahai = function(str, stripTags) {
     "Barbud = Bárbud",
     "Shahnaz = <u>Sh</u>ahnáz",
     "Qazvin = Qazvín",
-    "Ba<u>gh</u>d[aá]di = Ba<u>gh</u>dádí",
     "I[sṣ]f[aá]h[aá]n[ií] = Iṣfahání",
     "I[sṣ]f[aá]h[aá]n = Iṣfahán",
     "Ba(<u>)?gh(</u>)?d[aá]d[ií] = Ba<u>gh</u>dádí",
@@ -454,46 +418,38 @@ var _autoCorrectBahai = function(str, stripTags) {
     // Khodabaksh
   ];
 
-  let notWord = '(?![a-záíúA-ZÁÍÚ])'
+  let anyWord = '([a-záíúA-ZÁÍÚ]*)'
+  let endWord = '(?![a-záíúA-ZÁÍÚ])'
   CommonMispellings.forEach(function(item) {
     if (item.split('=').length == 2) {
-      let find = item.split('=').shift().trim()
-        // // Allow for possible quotes, e.g. '?Abdu...
-        // .replace(/^'\?/, "(?:\\b|[‘’'])")
-        // // Allow for possible character ranges, e.g. [']Umar
-        // .replace(/^(\[\W+\])\?/, "(?:\\b|$1)")
-        // // Allow for unicode letters
+      let find = item.split('=')[0].trim()
+      let repl = item.split('=')[1].trim()
 
-        // // Allow for character ranges with unicode letters
+      if (/\(\)$/.test(find) && !(/\$\d$/.test(repl))) {
+        repl += '$1'
+      }
 
+      find = find
+        // Handle the end of the word
+        .replace('()', anyWord)
+        // Handle hyphens and en-dashes
+        .replace('[-', '[-–')
         // .replace(/^/,)
-        .replace(/'(?!\])/g,"[‘’']") + notWord
-      var repl = item.split('=').pop().trim();
+        .replace(/'(?!\])/g,"[‘’']")
 
-      let toFind = {
-        singular: new RegExp(find, 'g'),
-        plural: new RegExp(find.replace(notWord, 's' + notWord), 'g'),
-        upper: new RegExp(find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s').replace(notWord.toUpperCase(), notWord), 'g'),
-        upperPlural: new RegExp(find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s').replace(notWord.toUpperCase(), 'S' + notWord), 'g'),
-        // singular: new RegExp(find + '(?![a-záíú])', 'g'),
-        // plural: new RegExp(find + 's' + '(?![a-záíú])', 'g'),
-        // upper: new RegExp(find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s') + '(?![A-ZÁÍÚ])', 'g'),
-        // upperPlural: new RegExp(find.toUpperCase().replace(/<u>/ig, '<u>').replace(/<\/u>/ig, '</u>').replace(/\\S/g, '\\s') + 'S' + '(?![A-ZÁÍÚ])', 'g'),
-      }
-      let toReplace = {
-        singular: repl,
-        plural: repl + 's',
-        upper: repl.toUpperCase(),
-        upperPlural: repl.toUpperCase() + 'S'
-      }
+      let findUpper = find.split('').reduce((t,c,i,a) => {
+        return t + (t.slice(-1) === '\\' ? c : c.toUpperCase())
+      }).replace(/<(\/?)u>/ig, '<$1u>')
 
-      for (let k of ['singular', 'plural', 'upper', 'upperPlural']) {
-        str = str.replace(toFind[k], toReplace[k])
-      }
+      str = str.replace(new RegExp(find + endWord, 'g'), repl)
+      str = str.replace(new RegExp(findUpper + endWord, 'g'), repl.toUpperCase())
 
     }
   });
 
+  str = str
+    // fix the Ayn in case it shows up at the beginning of an attribute value
+    .replace(/([a-z])=‘([AI])/ig, "$1='$2")
 
 
   // ‘Abdu’l- Baha[]
