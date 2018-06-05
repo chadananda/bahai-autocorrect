@@ -1,4 +1,5 @@
 2	&Aliy-i-Sayyah	&‘Alíy-i-Sayyah
+What to do about Bahaism, Bahaist, etc?
 2	'ABBUD	'ABBÚD
 2	'ABDU'R-RAHIM	'ABDU'R-RAḤÍM
 1	'ALA-AD-DIN	'ALA-AD-DÍN
@@ -8,7 +9,7 @@
 1	'Abdu'1Bahá'	‘Abdu’l-Bahá'
 2	'Abdu1-Bahá	‘Abdu’l-Bahá
 9	'Abú’l-Qásim	'Abu’l-Qásim
-1	'Abú’l-Qásim-i-Kashi'	'Abu’l-Qásim-i-Kashí'
+1	'Abú’l-Qásim-i-Kashi'	'Abu’l-Qásim-i-Ka<u>sh<u>í'
 6	'Adudu'd-Dawla	'Adudu'd-Dawlih
 1	'Akbar-i-Shahmirzadi	'Akbar-i-S_háhmírzádí
 11	'Ala'	‘Alá’
@@ -16,28 +17,37 @@
 20	'Ala'u'd-Dawlih	‘Alá’u'd-Dawlih
 1	'Ala'u'd-Dawlih's	‘Alá’u'd-Dawlih's
 5	'Ala'u'd-Din	‘Alá’u'd-Dín
+Is this the same name as ^^?
+Is this ‘Álam? Is this standard?
 5	'Aliy-i	‘Alíy-i
 2	'Aliy-i Bastami	‘Alíy-i Bastamí
 1	'Aliy-i-	‘Alíy-i-
+3	'Aliy-i-'Arab	‘Alíy-i-‘Arab
+Which spelling of Azim is this?
 3	'Aliy-i-Afnán	‘Alíy-i-Afnán
 3	'Aliy-i-Arbab	‘Alíy-i-Arbab
 14	'Aliy-i-Bastami	‘Alíy-i-Bastamí
 1	'Aliy-i-Bastami_	‘Alíy-i-Bastamí_
 1	'Aliy-i-Burujirdi	‘Alíy-i-Burújirdí
+Hayir sp
 1	'Aliy-i-Iṣfahání	‘Alíy-i-Iṣfahání
+Kan sp
 1	'Aliy-i-Kirmani	‘Alíy-i-Kirmání
 1	'Aliy-i-Kirmanshahi	‘Alíy-i-Kirmáns_háhí
 1	'Aliy-i-Lash-Furush	‘Alíy-i-Lás-Furús_h
 1	'Aliy-i-Malmiri	‘Alíy-i-Málmírí
 1	'Aliy-i-Maraghi'i	‘Alíy-i-Marág_hi'í
 5	'Aliy-i-Miri	‘Alíy-i-Mírí
+Is this a typo, or is there really a Misr?
 1	'Aliy-i-Mlri	‘Alíy-i-Mírí
 1	'Aliy-i-Nayrizi	‘Alíy-i-Nayrízí
 3	'Aliy-i-Nuri	‘Alíy-i-Núrí
+Should it be Píshnamáz, in accordance with modern spelling?
 1	'Aliy-i-Sabzavari	‘Alíy-i-Sabzivárí
 1	'Aliy-i-Sabzivari	‘Alíy-i-Sabzivárí
 2	'Aliy-i-Sardar	‘Alíy-i-Sardár
 11	'Aliy-i-Sayyah	‘Alíy-i-Sayyah
+Qahvih-chi sp
 1	'Aliy-i-Tabrizi	‘Alíy-i-Tabrízí
 1	'Aliy-i-Tafrishi	‘Alíy-i-Tafrís_hí
 1	'Aliy-i-Turshizi	‘Alíy-i-Turs_hízí
@@ -54,10 +64,17 @@
 1	'Alíy-i-Kaní	‘Alíy-i-Kaní
 1	'Alíy-i-Kirmani	‘Alíy-i-Kirmání
 1	'Alíy-i-Sabzivárí	‘Alíy-i-Sabzivárí
+There are two variants of Sayyah it seems; when should which be used, or can we tell?
+Is this always correct?
+
+Baghi sp
+2	'Arab-i-K_hán	‘Arab-i-K_hán
 7	'Asma	'Asmá’
 8	'Asma'	'Asmá’
+Malik sp - isn't there a Málik and a Malík?
 1	'Azali'	'Azalí'
 5	'Azamat	‘Aẓamat
+Azim sp
 1	'BAGDADI	'BAG_HDÁDI
 3	'INAYATU'LLAH	‘INÁYATU’LLÁH
 1	'IS_HRÁQÁT	'ISHRÁQÁT
@@ -66,6 +83,10 @@
 8	'Ilm	‘Ilm
 1	'Ilm ad-Din	‘Ilm ad-Dín
 1	'Ilm ad-Din_	‘Ilm ad-Dín_
+Kelam sp
+nujum sp
+rami sp
+
 1	'Isma'il	'Ismá’íl
 1	'Jinab-i-K_hán	'Jináb-i-K_hán
 1	'Jinab-i-Mujtahid	'Jináb-i-Mujtahid
@@ -78,41 +99,114 @@
 1	'Muhajir! Muhajir!'	'Muḥájír! Muḥájír!'
 2	'Muhajir'	'Muḥájír'
 1	'Muhajir-Inspired	'Muḥájír-Inspired
+Should be same as Qayyúmu'l-Asmá'?
 1	'Rahmat	'Raḥmat
 1	'Rahmat'	'Raḥmat'
+Should be u'lláh, like all other names?
 1	'S_hayk_hi	'S_hayk_hí
 1	'S_hírázee'	'S_hírází'
 1	'Sardar	'Sardár
 1	'Seyyed	'Siyyid
 1	'Shahinshah'	'S_háhins_háh'
+
+Should be same as 'Ulamáy-i?
+
 1	'd-Din	'd-Dín
 1	'd-Din-i-Afnán	'd-Dín-i-Afnán
 1	'qahviyi-\lkhánigí	'qahviyi-k_hánigí
+1	'un-Muhajir-like'! Rahmat	'un-Muḥájír-like'! Raḥmat
 1	'Ḥasan-i-Mázindaráni'	'Ḥasan-i-Mázindarání'
+verify
+1	-i-Haykalu'd-Din	-i-Haykalu'd-Dín
+1	<em>ta\lkht-i-raván</em>	<em>tak_ht-i-raván</em>
 7	ABU'L-FADL	ABU’L-FAḌL
 1	ABU'L-FADL'S	ABU’L-FAḌL'S
+1	ABU'L-QASIM	ABU’L-QÁSIM
+1	ABU'L-QASIM AFNAN	ABU’L-QÁSIM AFNÁN
+FIRAHANI sp
+2	ABULQASIM	ABU’L-QÁSIM
 2	ABU’L-FADL	ABU’L-FAḌL
+1	ABU’L-QASIM	ABU’L-QÁSIM
 3	AFNAN	AFNÁN
+Is Kabir always Kabír?
 1	AGHSAN	AG_HṢÁN
 1	AL-BAQARAH	AL-BÁQÁRAH
 1	ALLAHO ABHÁ	ALLÁH-U-ABHÁ
 2	ALLÁH–U–ABHÁ	ALLÁH-U-ABHÁ
 1	AMITABHÁ	AMITABHA
+Aren't there different spellings of Amir?
 10	AQA	ÁQÁ
+l=I, probably, but can we fix it automatically?
+1	AQAY-I-KALIM	ÁQÁY-I-KALÍM
+1	ARDÍQÁN	ARDIKAN
+1	A\lshraf	As_hraf
 2	Abdu1 Bahá	‘Abdu’l-Bahá
 3	Abhándlung	Abhandlung
 2	Abhándlungen	Abhandlungen
+8	Abhár	Abhar
+1	Abhár, Ibn-i-Abhár	Abhar, Ibn-i-Abhar
+Should be Abú?
+
+5	Abu'l-	Abu’l-
+1	Abu'l- Faḍl	Abu’l-Faḍl
+1	Abu'l- Qasim	Abu’l-Qásim
+should be ‘Alá’?
+is this the whole name?
+should be ‘Aṭṭar?
+how to remove dots before letters?
+9	Abu'l-‘Abbás	Abu’l-‘Abbás
+1	Abu'l-Ḥasan	Abu’l-Ḥasan
+Should be like 'Abdu'llah?
+
 15	Abu-Sa'id	Abu-Sa‘íd
 1	Abu-Sa'id's	Abu-Sa‘íd's
+
+
+
+This would be "Abul Fadhl". From V. Piff Mettleman's diary; do we want to change the historical text like this?
+1	Abu’l Fadhl--and	Abu’l-Faḍl--and
+1	Abu’l Gasim	Abu’l-Qásim
+Abul'-Ḥasan not worth fixing
+Abul'i-Qasim not worth fixing
+Line breaks in words
+
+Again, Faḍle is from V. Piff Mettleman. We are changing what she wrote.
+1	Abu’l_Faḍl	Abu’l-Faḍl
+1	Abú'l-Ḥasan	Abu’l-Ḥasan
+228	Abú’l-Qásim	Abu’l-Qásim
+1	Abú’l-Qásim	Muḥájír
+1	Abú’l-Qásim Kás_háni	Abu’l-Qásim Kás_hání
+1	Abú’l-Qásim \lK_hán	Abu’l-Qásim K_hán
+1	Abú’l-Qásim's	Abu’l-Qásim's
+
+
+
+Fix Hamadání
+
+2	Abú’l-Qásim-i-Iṣfahání	Abu’l-Qásim-i-Iṣfahání
+1	Abú’l-Qásim-i-K_hurasání	Abu’l-Qásim-i-K_hurasání
+1	Abú’l-Qásim-i-Kashi	Abu’l-Qásim-i-Ka<u>sh<u>í
+
+1	Abú’l-Qásim-i-Kás_háni	Abu’l-Qásim-i-Kás_hání
+4	Abú’l-Qásim-i-S_hírází	Abu’l-Qásim-i-S_hírází
+2	Abú’l-Qásim-i-Sulṭán	Abu’l-Qásim-i-Sulṭán
+fix Zanjan
+1	Abú’l-Qásim?'	Abu’l-Qásim?'
 1	Ad_hirbáyján-Tabriz	Ad_hirbáyján-Tabríz
 2	Aliy-i-Afnán	‘Alíy-i-Afnán
 1	Aliy-i-Bastami	‘Alíy-i-Bastamí
 2	Aliy-i-Kirmanshahi	‘Alíy-i-Kirmáns_háhí
+1	Aliy-i-Las Furush	‘Alíy-i-Lás-Furús_h
+1	Aliy-i-Las-Furush.[1]He	‘Alíy-i-Lás-Furús_h.[1]He
 1	Aliy-i-Nuri	‘Alíy-i-Núrí
+Raz sp
+
+Qahvih-chi sp
 2	Aliy-i-Tabrizi	‘Alíy-i-Tabrízí
 2	Aliy-i-Yazdí	‘Alíy-i-Yazdí
 2	Alláh-u Abhá	Alláh-u-Abhá
 2	Alláh-u'Abhá	Alláh-u-Abhá
+is it really -ul-?
 6	Alláho Abhá	Alláh-u-Abhá
 1	Alláho Abhá!'	Alláh-u-Abhá!'
 5	Alláho’Abhá	Alláh-u-Abhá
@@ -124,22 +218,66 @@
 1	Alláh–u–Abhá, Alláh–u–Abhá, Alláh–u–Abhá	Alláh-u-Abhá, Alláh-u-Abhá, Alláh-u-Abhá
 1	Alláh–u–Abhá,"which	Alláh-u-Abhá,"which
 1	Alláh–u–Abhá.--How	Alláh-u-Abhá.--How
+Aminu sp
+1	Asadu’lláh-i-Kás_háni	Asadu’lláh-i-Kás_hání
+2	Asadu’lláh-i-Ras_hti	Asadu’lláh-i-Ras_htí
+2	Asma	Asmá’
+18	Asma'	Asmá’
+Asmá’ul Ḥusná in modern usage, maybe just with a dash for us?
+2	Asma,'	Asmá’,'
+2	Asmá	Asmá’
+1	Asmá'	Asmá’
+
+1	Avicenna--Abu-‘Alí	Avicenna--Abú-‘Alí
 53	Azali	Azalí
 1	Azali's	Azalí's
+Sabbagh sp
+Azalís?
+2	Azamat	‘Aẓamat
+1	Aḥmad-i-Ibdal-i-Maraghi'i_	Aḥmad-i-Ibdal-i-Marág_hi'í_
 2	Aḥmad-i-Kirmani	Aḥmad-i-Kirmání
 4	Aḥmad-i-Kás_háni	Aḥmad-i-Kás_hání
+1	Aḥmadu'd-Din	Aḥmadu'd-Dín
+1	Aḥvál-i-\lShumá	Aḥvál-i-S_humá
 6	BAGHDAD	BAG_HDÁD
 16	BAHJI	BAHJÍ
 What do we do about telegram text?
+
+
+
+
+
+
+
+
+
+What is Bahá'iyyih?
 4	BANANI	BANÁNÍ
 4	BAYAN	BAYÁN
+51	Ba\lghdád	Bag_hdád
+
+Is this Bábu'd-Dín?
+What to do about Babism / Babist?
 1	Babíyyih	Bábíyyih
-77	Bag_hdádí	Bag_hdádi
-1	Bag_hdádí.'	Bag_hdádi.'
-2	Bag_hdádís	Bag_hdádis
+this looks like it might be wrong
+Badí‘s?
+Badri sp
+Badru sp
+Ghazz sp
+
+Fix Baghdadis
+Fix Bahjeh and Behjeh
+
+
+
+Doubt this is Bahjítabad
+1	Bahráms	Bahrams
 1	Bahá 'Ulláh	Bahá’u’lláh
 2	Bahá Ullah	Bahá’u’lláh
+6	Bahá'i	Bahá’í
 8	Bahá'is	Bahá’ís
+6	Bahá'u'd-Dawla	Bahá'u'd-Dawlih
+7	Bahá'u'd-Din	Bahá'u'd-Dín
 18	Bahá'u'llah	Bahá’u’lláh
 2	Bahá'u'llah's	Bahá’u’lláh's
 2	Bahá'ullah	Bahá’u’lláh
@@ -148,9 +286,85 @@ What do we do about telegram text?
 3	Bahás	Bahas
 2	Bahá’Ullah	Bahá’u’lláh
 1	Bahá’Ullah--was	Bahá’u’lláh--was
+
+How many are there? Is this Bahá'u'lláh’s?
+
+
+
+...really?!
+
+
+ok, this is just wrong.
+must be wrong.
+What?
+1	Bahá’í--Rahmat	Bahá’í--Raḥmat
+A. Alexander, History of the Baha'i Faith in Japan
+U. Schafer, Baha'i Ethics in the Light of Scripture
+A. Alexander, History of the Baha'i Faith in Japan
+Where is this?
+A. Alexander, History of the Baha'i Faith in Japan
+fix
+
+
+
+
+
+
+
+
+
+
+A. Alexander, History of the Baha'i Faith in Japan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A. Alexander, History of the Baha'i Faith in Japan
+
+
+
+
+
+
+This must be wrong
+E. Braun, A Reader's Guide
+
+
+
+
+
+192	Baqir	Báqir
+2	Baqir Sabzivari	Báqir Sabzivárí
+1	Baqir'	Báqir'
+8	Baqir's	Báqir's
+
+6	Baqir-i-S_hírází	Báqir-i-S_hírází
+3	Baqir-i-Tabrizi	Báqir-i-Tabrízí
+1	Baqir-i-Tabrizi_	Báqir-i-Tabrízí_
+13	Baqir_	Báqir_
 19	Bastami	Bastamí
 4	Bastami's	Bastamí's
 1	Bayánda	Bayanda
+1	Bayánu'l-'Arabi	Bayánu’l-‘Arabí
+1	Bayánu'l-Arabi	Bayánu’l-‘Arabí
+
 21	Burujird	Burújird
 30	Burujirdi	Burújirdí
 1	Burujirdi Tabrizi	Burújirdí Tabrízí
@@ -160,7 +374,9 @@ What do we do about telegram text?
 7	Buzurg-i-Nuri	Buzurg-i-Núrí
 4	Bábí-Bahá'i	Bábí-Bahá’í
 4	Bábí-Bahá'i_	Bábí-Bahá’í_
+1	Bú\lshihr	Bús_hihr
 1	CHIMBALÁQÁ	CHIMBALAGA
+Dar sp
 1	Derwaze-i-Mashhad	Derwaze-i-Mas_hhad
 3	FADIL-I-MAZINDARANI	FAḌIL-I-MÁZINDARÁNÍ
 1	FADIL-I-YAZDÍ	FAḌIL-I-YAZDÍ
@@ -188,6 +404,7 @@ What do we do about telegram text?
 1	IMAMATE	IMÁMATE
 4	IMAMS	IMÁMS
 1	IS_HRÁQÁT	ISHRÁQÁT
+1	Ilm	‘Ilm
 5	JALAL	JALÁL
 1	JAMAL	JAMÁL
 1	Ja'far-i-Kirmani	Ja'far-i-Kirmání
@@ -196,6 +413,10 @@ What do we do about telegram text?
 59	Jamál-i-Burujirdi	Jamál-i-Burújirdí
 1	Jamál-i-Burujirdi--a	Jamál-i-Burújirdí--a
 1	Jamál-i-Burujirdi_	Jamál-i-Burújirdí_
+65	Jamálu'd-Din	Jamálu'd-Dín
+1	Jamálu'd-Din Abu'l-‘Abbás	Jamálu'd-Dín Abu’l-‘Abbás
+3	Jamálu'd-Din's	Jamálu'd-Dín's
+1	Jamálu'l-'Ilm	Jamálu'l-‘Ilm
 2	Jinab-i-Zaynu’l-Muqarrabín	Jináb-i-Zaynu’l-Muqarrabín
 7	KHAN	K_HÁN
 1	KHAN-I-'AVAMID	K_HÁN-I-‘AVÁMID
@@ -279,6 +500,7 @@ What do we do about telegram text?
 470	Muhajir	Muḥájír
 1	Muhajir'	Muḥájír'
 46	Muhajir's	Muḥájír's
+1	Muhajir, Abú’l-Qásim	Muḥájír, Abu’l-Qásim
 1	Muhajir--'Pioneer'	Muḥájír--'Pioneer'
 2	Muhajir...'	Muḥájír...'
 1	Muhajir?'	Muḥájír?'
@@ -461,6 +683,7 @@ What do we do about telegram text?
 1	_S_hírází	_Shírází
 8	_Seyyed	_Siyyid
 1	_ismu'l-a'zam_)--Alláh–u–Abhá--has	_ismu'l-a'zam_)--Alláh-u-Abhá--has
+3	al-'Ilm	al-‘Ilm
 1	al-Bastami	al-Bastamí
 1	al-Mashhad	al-Mas_hhad
 1	anti-S_hayk_hi	anti-S_hayk_hí

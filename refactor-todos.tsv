@@ -2,14 +2,13 @@
 1	&Bahá’ísm	&Bahá'ism
 2	'ABBUD	'ABBÚD
 2	'ABDU'R-RAHIM	'ABDU'R-RAḤÍM
-1	'ALA-AD-DIN	'ALA-AD-DÍN
 1	'ARAB	‘ARAB
 2	'Abdu'1-Bahá	‘Abdu’l-Bahá
 1	'Abdu'1-Bahá's	‘Abdu’l-Bahá's
 1	'Abdu'1Bahá'	‘Abdu’l-Bahá'
 2	'Abdu1-Bahá	‘Abdu’l-Bahá
-9	'Abú’l-Qásim	'Abu’l-Qásim
-1	'Abú’l-Qásim-i-Kashi'	'Abu’l-Qásim-i-Kashí'
+9	'Abú’l-Qásim	'
+1	'Abú’l-Qásim-i-Kashi'	'-i-Ka<u>sh<u>í'
 6	'Adudu'd-Dawla	'Adudu'd-Dawlih
 1	'Akbar-i-Shahmirzadi	'Akbar-i-S_háhmírzádí
 11	'Ala'	‘Alá’
@@ -75,7 +74,7 @@
 1	'Azali'	'Azalí'
 5	'Azamat	‘Aẓamat
 3	'Azim-i-Tafrishi	'Azim-i-Tafrís_hí
-1	'BAGDADI	'BAG_HDÁDI
+1	'BAGDADI	'BAG_HDÁDÍ
 1	'BAHÁ’ÍST	'BAHAIST
 2	'Bahá’ísm	'Bahaism
 2	'Bahá’ísm	'Bahá'ism
@@ -84,12 +83,9 @@
 1	'Bahá’ísm.'	'Bahaism.'
 1	'Bahá’ísmus'	'Bahá'ísmus'
 3	'INAYATU'LLAH	‘INÁYATU’LLÁH
-1	'IS_HRÁQÁT	'ISHRÁQÁT
 1	'Ibn-Abhár	'Ibn-Abhar
 1	'Ibn-Abhár?'	'Ibn-Abhar?'
-8	'Ilm	‘Ilm
-1	'Ilm ad-Din	‘Ilm ad-Dín
-1	'Ilm ad-Din_	‘Ilm ad-Dín_
+10	'Ilm	‘Ilm
 2	'Ilm-i-Kelam	‘Ilm-i-Kelam
 1	'Ilm-i-nujum	‘Ilm-i-nujum
 1	'Ilm-i-rami	‘Ilm-i-rami
@@ -100,7 +96,6 @@
 6	'Izzi'd-Din	'Izzi'd-Dín
 1	'Izzu'd-Dawla	'Izzu'd-Dawlih
 4	'Izzu'd-Din	'Izzu'd-Dín
-1	'Izzud-Dawla	'Izzud-Dawlih
 1	'Jenab-i-Khadimu'llah'	'Jináb-i-Khadimu'llah'
 1	'Jinab-i-K_hán	'Jináb-i-K_hán
 1	'Jinab-i-Mu'allim'	'Jináb-i-Mu'allim'
@@ -136,26 +131,25 @@
 1	<em>ta\lkht-i-raván</em>	<em>tak_ht-i-raván</em>
 7	ABU'L-FADL	ABU’L-FAḌL
 1	ABU'L-FADL'S	ABU’L-FAḌL'S
-1	ABU'L-QASIM	ABU’L-QÁSIM
-1	ABU'L-QASIM AFNAN	ABU’L-QÁSIM AFNÁN
-1	ABU'L-QASIM-I-FIRAHANI, QÁ’IM-MAQAM	ABU’L-QÁSIM-I-FIRAHANI, QÁ’IM-MÁQÁM
+1	ABU'L-QASIM AFNAN	AFNÁN
+1	ABU'L-QASIM-I-FIRAHANI	-I-FIRAHANI
 2	ABU’L	ABL
 2	ABU’L-FADL	ABU’L-FAḌL
-1	ABU’L-QASIM	ABU’L-QÁSIM
 3	AFNAN	AFNÁN
 1	AFNAN-I-KABIR	AFNÁN-I-KABIR
 1	AGHSAN	AG_HṢÁN
-1	AL-BAQARAH	AL-BÁQÁRAH
 1	ALIY-I-SAYYAH	‘ALÍY-I-SAYYAH
 1	ALLAH-VIRDI	ALLÁH-VIRDI
 1	ALLAHO ABHÁ	ALLÁH-U-ABHÁ
 2	ALLÁH–U–ABHÁ	ALLÁH-U-ABHÁ
 1	AMITABHÁ	AMITABHA
 1	AMÍR	AMIR
-1	AMÍR-KIYA BAQA	AMIR-KIYA BÁQÁ
+1	AMÍR-KIYA	AMIR-KIYA
 10	AQA	ÁQÁ
-1	AQA KHAN-l-QÁ’IM-MAQAMI	ÁQÁ K_HÁN-l-QÁ’IM-MÁQÁMI
+1	AQA KHAN-l-QÁ’IM-MAQAMI	ÁQÁ K_HÁN-l-QÁ’IM-MAQAMI
 1	AQAY-I-KALIM	ÁQÁY-I-KALÍM
+1	ARDÍQÁN	ARDIKAN
+1	AZ‘ALÍ	AZALÍ
 1	A\lshraf	As_hraf
 2	Abdu1 Bahá	‘Abdu’l-Bahá
 3	Abhándlung	Abhandlung
@@ -164,14 +158,14 @@
 1	Abhár, Ibn-i-Abhár	Abhar, Ibn-i-Abhar
 1	Abi-Tálib	Abi-Talib
 1	Abmadu'd-Din	Abmadu'd-Dín
-7	Abu'l-	Abu’l-
-1	Abu'l- Qasim	Abu’l-Qásim
-1	Abu'l-'Ala	Abu’l-'Ala
-9	Abu'l-'As	Abu’l-'As
-1	Abu'l-'Attar	Abu’l-'Attar
-1	Abu'l-.Ḥasan-‘Alí	Abu’l-.Ḥasan-‘Alí
-9	Abu'l-‘Abbás	Abu’l-‘Abbás
-1	Abu'l-Ḥasan	Abu’l-Ḥasan
+5	Abu'l-	Abu’l
+1	Abu'l- Faḍl	Abu’l-Faḍl
+1	Abu'l-'Ala	Abu’l'Ala
+9	Abu'l-'As	Abu’l'As
+1	Abu'l-'Attar	Abu’l'Attar
+1	Abu'l-.Ḥasan-‘Alí	Abu’l.Ḥasan-‘Alí
+9	Abu'l-‘Abbás	Abu’l‘Abbás
+1	Abu'l-Ḥasan	Abu’lḤasan
 1	Abu-'Abdi'llah	Abú-'Abdi'llah
 1	Abu-'Afak	Abú-'Afak
 8	Abu-'Amir	Abú-'Amir
@@ -182,42 +176,43 @@
 1	Abu-Sa'id's	Abu-Sa‘íd's
 2	Abu-‘Abdu’lláh	Abú-‘Abdu’lláh
 11	Abu-‘Alí	Abú-‘Alí
-10	Abu’l	Abul
-1	Abu’l Gasim	Abu’l-Qásim
-1	Abu’l'-Ḥasan	Abul'-Ḥasan
-1	Abu’l'i-Qasim	Abul'i-Qasim
+3	Abu’l Fadhl	Abu’l-Faḍl
+1	Abu’l Fadhl--and	Abu’l-Faḍl--and
+1	Abu’l'-Ḥasan	Abu’l-Ḥasan
 1	Abu’l-Faḍl	Abl Faḍl
-2	Abu’l-Faḍl	Abul
-1	Abu’l-Faḍl's	Abul
-2	Abu’l-Faḍle	Abul Faḍle
-2	Abu’l-Qásim	Abul
-1	Abu’l_Faḍl	Abu’l_Fadl
-1	Abú'l-Ḥasan	Abu’l-Ḥasan
-228	Abú’l-Qásim	Abu’l-Qásim
+2	Abu’l-Faḍl	Abu’l
+1	Abu’l-Faḍl's	Abu’l
+2	Abu’l-Faḍle	Abu’l-Faḍl
+2	Abu’l-Qásim	
+1	Abu’l-Qásim Iṣfahání	Esphahani
+1	Abu’l_Faḍl	Abu’l-Faḍl
+1	Abú'l-Ḥasan	Abu’lḤasan
+63	Abú’l-Qásim	
 1	Abú’l-Qásim	Muḥájír
-1	Abú’l-Qásim Kás_háni	Abu’l-Qásim Kás_hání
-1	Abú’l-Qásim \lK_hán	Abu’l-Qásim K_hán
-1	Abú’l-Qásim's	Abu’l-Qásim's
-1	Abú’l-Qásim-i-Bayed	Abu’l-Qásim-i-Bayed
-1	Abú’l-Qásim-i-Farahani	Abu’l-Qásim-i-Farahani
-1	Abú’l-Qásim-i-Hamadam	Abu’l-Qásim-i-Hamadam
-8	Abú’l-Qásim-i-Hamadani	Abu’l-Qásim-i-Hamadani
-1	Abú’l-Qásim-i-Hamandini	Abu’l-Qásim-i-Hamandini
-2	Abú’l-Qásim-i-Iṣfahání	Abu’l-Qásim-i-Iṣfahání
-1	Abú’l-Qásim-i-K_hurasání	Abu’l-Qásim-i-K_hurasání
-1	Abú’l-Qásim-i-Kashi	Abu’l-Qásim-i-Kashí
-1	Abú’l-Qásim-i-Kashi Abú’l-Qásim-i-Ká_sh_í	Abu’l-Qásim-i-Kashí Abu’l-Qásim-i-Ká_sh_í
-2	Abú’l-Qásim-i-Khammar	Abu’l-Qásim-i-Khammar
-1	Abú’l-Qásim-i-Kás_háni	Abu’l-Qásim-i-Kás_hání
-1	Abú’l-Qásim-i-Marnani	Abu’l-Qásim-i-Marnani
-1	Abú’l-Qásim-i-Marnuni	Abu’l-Qásim-i-Marnuni
-1	Abú’l-Qásim-i-Nazir	Abu’l-Qásim-i-Nazir
-4	Abú’l-Qásim-i-S_hírází	Abu’l-Qásim-i-S_hírází
-2	Abú’l-Qásim-i-Sulṭán	Abu’l-Qásim-i-Sulṭán
-2	Abú’l-Qásim-i-Zanjani	Abu’l-Qásim-i-Zanjani
-1	Abú’l-Qásim?'	Abu’l-Qásim?'
+1	Abú’l-Qásim Kás_háni	Kás_hání
+1	Abú’l-Qásim \lK_hán	K_hán
+1	Abú’l-Qásim's	's
+1	Abú’l-Qásim-i-Bayed	-i-Bayed
+1	Abú’l-Qásim-i-Farahani	-i-Farahani
+1	Abú’l-Qásim-i-Hamadam	-i-Hamadam
+8	Abú’l-Qásim-i-Hamadani	-i-Hamadani
+1	Abú’l-Qásim-i-Hamandini	-i-Hamandini
+2	Abú’l-Qásim-i-Iṣfahání	-i-Iṣfahání
+1	Abú’l-Qásim-i-K_hurasání	-i-K_hurasání
+1	Abú’l-Qásim-i-Kashi	-i-Ka<u>sh<u>í
+1	Abú’l-Qásim-i-Kashi Abú’l-Qásim-i-Ká_sh_í	-i-Ka<u>sh<u>í -i-Ká_sh_í
+2	Abú’l-Qásim-i-Khammar	-i-Khammar
+1	Abú’l-Qásim-i-Kás_háni	-i-Kás_hání
+1	Abú’l-Qásim-i-Marnani	-i-Marnani
+1	Abú’l-Qásim-i-Marnuni	-i-Marnuni
+1	Abú’l-Qásim-i-Nazir	-i-Nazir
+4	Abú’l-Qásim-i-S_hírází	-i-S_hírází
+2	Abú’l-Qásim-i-Sulṭán	-i-Sulṭán
+2	Abú’l-Qásim-i-Zanjani	-i-Zanjani
+1	Abú’l-Qásim?'	'
 1	Ad_hirbáyján-Tabriz	Ad_hirbáyján-Tabríz
-1	Al-Bayánu'l-'Arabi	Al-Bayanu'l-'Arabi
+1	Al-Bayánu'l-'Arabi	Al-Bayánu’l-‘Arabí
+1	Al-Bayánu'l-Arabi	Al-Bayánu’l-‘Arabí
 2	Aliy-i-Afnán	‘Alíy-i-Afnán
 1	Aliy-i-Bastami	‘Alíy-i-Bastamí
 2	Aliy-i-Kirmanshahi	‘Alíy-i-Kirmáns_háhí
@@ -272,8 +267,10 @@
 4	Aḥmad-i-Kás_háni	Aḥmad-i-Kás_hání
 1	Aḥmadu'd-Din	Aḥmadu'd-Dín
 1	Aḥvál-i-\lShumá	Aḥvál-i-S_humá
+1	BA-HA‘ABBÁS-PERSIANTEACHER-TO	BA-HAABBAS-PERSIANTEACHER-TO
 6	BAGHDAD	BAG_HDÁD
 16	BAHJI	BAHJÍ
+2	BAHÁ’U’LLÁH	BAHA'U'LLAH
 2	BAHÁ’U’LLÁHS	BAHAULLAHS
 1	BAHÁ’U’LLÁHS	BAHÁ'U'LLAHS
 1	BAHÁ’ÍES	BAHAIES
@@ -288,7 +285,6 @@
 4	BANANI	BANÁNÍ
 1	BAQIR KASHANI	BÁQIR KÁS_HÁNÍ
 4	BAYAN	BAYÁN
-4	BEGAN	BÍQÁN
 1	BURHANI'D-DIN	BURHANI'D-DÍN
 1	BYJALALU’D-DIN	BYJALALU’D-DÍN
 51	Ba\lghdád	Bag_hdád
@@ -298,14 +294,12 @@
 4	Babísm_	Bábísm_
 1	Babíyyih	Bábíyyih
 1	Babúya	Bábúya
+1	Badi‘'u'llah's	Badi'u'llah's
 1	Badi‘s	Badis
 3	Badri'd-Din	Badri'd-Dín
 4	Badru'd-Din	Badru'd-Dín
 1	Badru'd-Din-i-Ghazzi	Badru'd-Dín-i-Ghazzi
 1	Badru’d-Din	Badru’d-Dín
-77	Bag_hdádí	Bag_hdádi
-1	Bag_hdádí.'	Bag_hdádi.'
-2	Bag_hdádís	Bag_hdádis
 3	Bahjíh	Bahjeh
 1	Bahjíh	Behjeh
 1	Bahjísu	Bajisu
@@ -327,6 +321,7 @@
 3	Bahás	Bahas
 2	Bahá’Ullah	Bahá’u’lláh
 1	Bahá’Ullah--was	Bahá’u’lláh--was
+1	Bahá’u’lláh	Baha'u'llah
 1	Bahá’u’lláhh_	Bahá'u'llahh_
 5	Bahá’u’lláhs	Bahá'u'llahs
 1	Bahá’u’lláhs	Bahá'u'lláhs
@@ -391,12 +386,14 @@
 20	Bahá’íyyih	Bahá'íyyih
 1	Banu-Bahjílah	Banu-Bajilah
 1	Banu-Sa'idah	Banu-Sa‘ídah
-192	Baqir	Báqir
+167	Baqir	Báqir
+22	Baqir Majlisi	Báqir Majlisí
+2	Baqir Majlisi's	Báqir Majlisí's
 2	Baqir Sabzivari	Báqir Sabzivárí
 1	Baqir'	Báqir'
 8	Baqir's	Báqir's
 1	Baqir-Abad	Báqir-Abad
-1	Baqir-i-Majlisi.[4]He	Báqir-i-Majlisi.[4]He
+1	Baqir-i-Majlisi.[4]He	Báqir-i-Majlisí.[4]He
 6	Baqir-i-S_hírází	Báqir-i-S_hírází
 3	Baqir-i-Tabrizi	Báqir-i-Tabrízí
 1	Baqir-i-Tabrizi_	Báqir-i-Tabrízí_
@@ -408,9 +405,8 @@
 1	Bayánic	Bayanic
 2	Bayánis	Bayanis
 2	Bayániyya	Bayaniyya
-2	Bayáns	Bayans
-1	Bayáns	Beyens
-1	Bayánu'l-'Arabi	Bayanu'l-'Arabi
+1	Bayánu'l-'Arabi	Bayánu’l-‘Arabí
+1	Bayánu'l-Arabi	Bayánu’l-‘Arabí
 1	Bibi-Shahr-Banu	Bibi-Shahr-Bánú
 3	Burhani'd-Din	Burhani'd-Dín
 21	Burujird	Burújird
@@ -421,12 +417,11 @@
 3	Bushrú'í	Bus_hrú'í
 7	Buzurg-i-Nuri	Buzurg-i-Núrí
 1	BÁBS	BABS
-3	Báb-ed-Din	Báb-ed-Dín
 11	Bábs	Babs
 4	Bábí-Bahá'i	Bábí-Bahá’í
 4	Bábí-Bahá'i_	Bábí-Bahá’í_
-1	Báqir-i-Tabíb-i-_S_hírází	Báqir-i-Tabíb-i-_Shírází
 1	Bú\lshihr	Bús_hihr
+1	B‘ALÍ	BALI
 1	CHIMBALÁQÁ	CHIMBALAGA
 1	Cause--Rahmat	Cause--Raḥmat
 2	Daru'l-'Ilm	Daru'l-‘Ilm
@@ -441,7 +436,6 @@
 1	FADIL-I-YAZDÍ	FAḌIL-I-YAZDÍ
 1	FADIL-i-MAZINDARANI	FAḌIL-i-MÁZINDARÁNÍ
 1	FADIL-l-MAZINDARANI	FAḌIL-l-MÁZINDARÁNÍ
-1	FILM	F‘ILM
 6	FURUTAN	FURÚTAN
 4	Fakhru'd-Din	Fakhru'd-Dín
 1	Faraju'llah-i-Tafrishi	Faraju'llah-i-Tafrís_hí
@@ -458,7 +452,6 @@
 1	Faḍl-i-Qa'ini	Faḍl-i-Qá'iní
 1	Faḍlu'llah-i-Nuri	Faḍlu'llah-i-Núrí
 1	Fárábís	Farabis
-1	GHAYB-I-BAQA	GHAYB-I-BÁQÁ
 4	Ghaziyu'd-Din	Ghaziyu'd-Dín
 1	Ghiyathi'd-Din	Ghiyathi'd-Dín
 1	Ghiyathu'd-Din	Ghiyathu'd-Dín
@@ -487,7 +480,6 @@
 4	IMAMS	IMÁMS
 1	ISMA'IL	ISMÁ’ÍL
 1	ISMA'IL-I-KASHANI	ISMÁ’ÍL-I-KÁS_HÁNÍ
-1	IS_HRÁQÁT	ISHRÁQÁT
 1	Ibn-i-.Ḥájíb	Ibn-i-.Hájib
 78	Ibn-i-Abhár	Ibn-i-Abhar
 1	Ibn-i-Abhár's	Ibn-i-Abhar's
@@ -495,7 +487,7 @@
 1	Ibn-i-Ḥájíb	Ibn-i-Hajíb
 1	Ibni-Abhár	Ibni-Abhar
 3	Ibrahim-i-Abhári	Ibrahim-i-Abhari
-1	Ibrahim-i-Kashi	Ibrahim-i-Kashí
+1	Ibrahim-i-Kashi	Ibrahim-i-Ka<u>sh<u>í
 1	Ibrahim-i-Kás_háni	Ibrahim-i-Kás_hání
 1	Ibrahim-i-Sabzivari	Ibrahim-i-Sabzivárí
 1	Ibráhím-i-Abhárí	Ibráhím-i-Abharí
@@ -530,7 +522,7 @@
 1	Ismá‘il	Ismá’íl
 6	Ismá‘íl	Ismá’íl
 1	Iṣfahání	Esfahani
-2	Iṣfahání	Esphahani
+1	Iṣfahání	Esphahani
 5	JALAL	JALÁL
 1	JALAL HAKIMAN	JALÁL ḤAKÍMAN
 2	JALALIYYIH	JALÁLIYYIH
@@ -561,7 +553,7 @@
 1	Jamáli'd-Din'	Jamáli'd-Dín'
 1	Jamáli'd-Din-i-Afghani	Jamáli'd-Dín-i-Afghani
 65	Jamálu'd-Din	Jamálu'd-Dín
-1	Jamálu'd-Din Abu'l-‘Abbás	Jamálu'd-Dín Abu’l-‘Abbás
+1	Jamálu'd-Din Abu'l-‘Abbás	Jamálu'd-Dín Abu’l‘Abbás
 3	Jamálu'd-Din's	Jamálu'd-Dín's
 8	Jamálu'd-Din-i-Afghani	Jamálu'd-Dín-i-Afghani
 1	Jamálu'd-Din-i-Afghani--(see	Jamálu'd-Dín-i-Afghani--(see
@@ -646,20 +638,20 @@
 2	Jinab-i-Ḥájí	Jináb-i-Ḥájí
 52	Julfa	Julfá
 1	Juvayni	Juvayní
-1	KAM‘ALÍ'D-DIN	KAM‘ALÍ'D-DÍN
+1	KAM‘ALÍ'D-DIN	KAMÁLI'D-DÍN
 7	KHAN	K_HÁN
 1	KHAN-I-'AVAMID	K_HÁN-I-‘AVÁMID
 1	KHAN-I-BALUCH	K_HÁN-I-BALUCH
 2	KHAN-I-SHAVIRDI	K_HÁN-I-S_HAVIRDÍ
 5	KHURASAN	K_HURASÁN
 1	KHURASAN KASHAN	K_HURASÁN KÁS_HÁN
+1	KIG‘ALÍ	KIGALI
 1	KIRMANI	KIRMÁNÍ
 1	K_hayyáms	Khayyams
 1	K_hurasán/Sistan--Mashhad	K_hurasán/Sistan--Mas_hhad
 2	K_hurasánís	Khurasanis
 1	K_hurasánís'	Khurasanis'
 2	K_hán-i-'Avamid	K_hán-i-‘Avámid
-2	Kamál-ud-Din	Kamál-ud-Dín
 1	Kamáli'd-Din	Kamáli'd-Dín
 16	Kamálu'd-Din	Kamálu'd-Dín
 1	Kamálu'd-Din-Naraqi	Kamálu'd-Dín-Naraqi
@@ -667,8 +659,8 @@
 3	Kamálu’d-Din	Kamálu’d-Dín
 1	Kar\lkh	Kark_h
 1	Karim-i-Ṭihráni	Karim-i-Ṭihrání
-10	Kashi	Kashí
-1	Kashi'	Kashí'
+10	Kashi	Ka<u>sh<u>í
+1	Kashi'	Ka<u>sh<u>í'
 1	Kay-\lK_husraw	Kay-K_husraw
 8	Kermani	Kirmání
 1	Kermani's	Kirmání's
@@ -752,7 +744,7 @@
 7	Khan-i-Sardar	K_hán-i-Sardár
 3	Khan-i-Sarraf	K_hán-i-Sarraf
 1	Khan-i-Sartip	K_hán-i-Sartip
-1	Khan-i-Sarvistani, Mashhadi Abú’l-Qásim-i-Kharraz	K_hán-i-Sarvistani, Mas_hhadí Abu’l-Qásim-i-Kharraz
+1	Khan-i-Sarvistani, Mashhadi Abú’l-Qásim-i-Kharraz	K_hán-i-Sarvistani, Mas_hhadí -i-Kharraz
 4	Khan-i-Shavirdi	K_hán-i-S_havirdí
 2	Khan-i-Shaybani	K_hán-i-Shaybani
 1	Khan-i-Sipihr	K_hán-i-Sipihr
@@ -780,7 +772,7 @@
 1	Khán-i-Kirmání's	K_hán-i-Kirmání's
 1	Khán-i-Núrí	K_hán-i-Núrí
 34	Kirmani	Kirmání
-1	Kirmani), Abú’l-Qásim	Kirmání), Abu’l-Qásim
+1	Kirmani), Abú’l-Qásim	Kirmání), 
 108	Kirmanshah	Kirmáns_háh
 1	Kirmanshahi	Kirmáns_háhí
 1	Kirmán\lsháh	Kirmáns_háh
@@ -803,9 +795,9 @@
 2	LUTFU'LLAH HAKIM	LUṬFU’LLÁH ḤAKÍM
 2	Las-Furush	Lás-Furús_h
 5	Lawh-i-Haykalu'd-Din	Lawh-i-Haykalu'd-Dín
+1	L‘AKKÁ	LAKKA
 1	MAHABHÁRATA--[underlined	MAHABHARATA--[underlined
 1	MAITRYA-AMITABHÁ	MAITRYA-AMITABHA
-1	MAQAMI	MÁQÁMI
 5	MASHHAD	MAS_HHAD
 1	MASHHAD, KHURASAN	MAS_HHAD, K_HURASÁN
 1	MASHRIQULADHKARS	MAS_HRIQU’L-AD_HKÁRS
@@ -821,7 +813,7 @@
 3	MULLA	MULLÁ
 1	MULLA MUḤAMMAD-I-QA'INI	MULLÁ MUḤAMMAD-I-QÁ'INÍ
 1	MULLA ‘ALÍ-AKBAR-I-SHAHMÍRZÁDI	MULLÁ ‘ALÍ-AKBAR-I-S_HÁHMÍRZÁDÍ
-3	MUNIRIH	MUNÍRIH
+2	MUNIRIH	MUNÍRIH
 1	MUḤAMMAD ALIY-I-NAHRI	MUḤAMMAD-‘ALÍY-I-NAHRI
 1	MUḤAMMAD-ALIY-I-SALMANI	MUḤAMMAD-‘ALÍY-I-SALMANI
 1	MUḤAMMAD-BAQIR	MUḤAMMAD-BÁQIR
@@ -830,7 +822,6 @@
 1	MUḤAMMAD-TAQIY-I-AFNAN	MUḤAMMAD-TAQÍY-I-AFNÁN
 2	Ma'idiy-i-Asma'ni	Ma'idiy-i-Asmá’'ni
 1	Ma'sum-'Aliy-i-Aynalu	Ma'sum-‘Alíy-i-Aynalu
-1	Madj’ud-Din	Madj’ud-Dín
 2	Mafhúm-i-Babíyyat	Mafhúm-i-Bábíyyat
 61	Mah-Ku	Máh-Kú
 5	Mah-ku	Máh-Kú
@@ -840,6 +831,9 @@
 76	Majdu'd-Din	Majdu'd-Dín
 5	Majdu'd-Din's	Majdu'd-Dín's
 1	Majdu’d-Din	Majdu’d-Dín
+1	Majlisi	Báqir
+87	Majlisi	Majlisí
+5	Majlisi's	Majlisí's
 1	Majídi	Majídí
 1	Majídis	Majídís
 104	Maku	Máh-Kú
@@ -858,12 +852,13 @@
 1	Mashhad-Ṭihrán	Mas_hhad-Ṭihrán
 1	Mashhad. Rahmat	Mas_hhad. Raḥmat
 82	Mashhadi	Mas_hhadí
-1	Mashhadi Abú’l-Qásim-i-Labbaf	Mas_hhadí Abu’l-Qásim-i-Labbaf
+1	Mashhadi Abú’l-Qásim-i-Labbaf	Mas_hhadí -i-Labbaf
 1	Mashhadi Baqir-i-Sabbagh	Mas_hhadí Báqir-i-Sabbagh
 16	Mashiyyat	Mas_híyyat
 9	Mashíyyat	Mas_híyyat
 1	Masá'il	Masá’il
-3	Maḥmúd-i-Kashi	Maḥmúd-i-Kashí
+1	Maḥmúd's	Mahmud's
+3	Maḥmúd-i-Kashi	Maḥmúd-i-Ka<u>sh<u>í
 1	Maḥmúd-i-Kirmanshahi	Maḥmúd-i-Kirmáns_háhí
 10	Maḥmúd-i-Kás_háni	Maḥmúd-i-Kás_hání
 2	Maḥmúdi	Mahmoodi
@@ -871,7 +866,6 @@
 8	Mihdíy-i-Ras_hti	Mihdíy-i-Ras_htí
 2	Mihdíy-i-Ras_hti's	Mihdíy-i-Ras_htí's
 1	Mihdíy-i-Ras_hti--like	Mihdíy-i-Ras_htí--like
-2	Mu'inid-Din-i-Parvanih	Mu'inid-Dín-i-Parvanih
 2	Mu'inu'd-Din	Mu'inu'd-Dín
 5	Mu'izzu'd-Dawla	Mu'izzu'd-Dawlih
 2	Mu'tamadu'd-Dawla	Mu'tamadu'd-Dawlih
@@ -883,7 +877,7 @@
 470	Muhajir	Muḥájír
 1	Muhajir'	Muḥájír'
 46	Muhajir's	Muḥájír's
-1	Muhajir, Abú’l-Qásim	Muḥájír, Abu’l-Qásim
+1	Muhajir, Abú’l-Qásim	Muḥájír
 1	Muhajir--'Pioneer'	Muḥájír--'Pioneer'
 2	Muhajir...'	Muḥájír...'
 1	Muhajir?'	Muḥájír?'
@@ -907,7 +901,6 @@
 1	Mullázadih	Mullazadih
 5	Muníreh	Munírih
 1	Murgh-i-Naw-Rúzi	Murgh-i-Nawruzi
-1	Musaffarid-Din	Musaffarid-Dín
 2	Musharrafu'd-Dawla	Musharrafu'd-Dawlih
 1	Mushin-i-Fayd-i-Kás_háni's	Mushin-i-Fayd-i-Kás_hání's
 1	Mushiru'd-Dawla	Mushiru'd-Dawlih
@@ -921,6 +914,7 @@
 18	Muzaffaru'd-Din	Muzaffaru'd-Dín
 2	Muzaffaru'd-Din Shahs	Muzaffaru'd-Dín S_háhs
 1	Muzaffru'd-Din	Muzaffru'd-Dín
+2	Muḥammad	Muhammad
 1	Muḥammad'-'Aliy-i-Faizi	Muḥammad'-‘Alíy-i-Faizi
 89	Muḥammad-Baqir	Muḥammad-Báqir
 1	Muḥammad-Baqir Khan-i-Biglarbagi	Muḥammad-Báqir K_hán-i-Biglarbagi
@@ -982,12 +976,15 @@
 1	Muḥammad-Ḥusayn-i-Kirmani	Muḥammad-Ḥusayn-i-Kirmání
 1	Muḥammad-Ḥusayn-i-Kás_háni	Muḥammad-Ḥusayn-i-Kás_hání
 3	Muḥammad-Ḥusayn-i-Maraghi'i	Muḥammad-Ḥusayn-i-Marág_hi'í
+1	Muḥammad‘Alí	Muḥammad'‘Alí
 11	Mázindaráni	Mázindarání
 1	Mázindaráni's	Mázindarání's
 1	Mír'atu'l-Azaliyyih	Mír'atu'l-Azalíyyih
 1	Mírzá-Haydar-‘Alí	Mírzá-Ḥaydar-‘Alí
 2	Mírzápur	Mirzapur
+1	Mírzá‘Abdu’l-Karim-i-Ardibili	Mírzá'‘Abdu’l-Karim-i-Ardibili
 1	M‘AKKÁY	MACKAY
+5	M‘ALÍ	MALI
 1	M‘Akkáh	M'Akkah
 2	N6ru'd-Din	N6ru'd-Dín
 2	NABIL	NABÍL
@@ -1008,25 +1005,19 @@
 1	Najibu'd-Din	Najibu'd-Dín
 5	Najmi'd-Din	Najmi'd-Dín
 1	Najmu'd-Din	Najmu'd-Dín
-1	Najmu'd-Din Abú’l-Qásim	Najmu'd-Dín Abu’l-Qásim
+1	Najmu'd-Din Abú’l-Qásim	Najmu'd-Dín
 1	Nariru’d-Din	Nariru’d-Dín
 1	Nasim'd-Dawla	Nasim'd-Dawlih
 1	Nasir'd-Din	Nasir'd-Dín
-5	Nasirid-Din	Nasirid-Dín
 1	Nasirru'd-Din	Nasirru'd-Dín
 12	Nasiru'd-Dawla	Nasiru'd-Dawlih
 131	Nasiru'd-Din	Nasiru'd-Dín
 2	Nasiru'd-Din's	Nasiru'd-Dín's
 1	Nasiru'd-Din-S_háh	Nasiru'd-Dín-S_háh
-1	Nasiru'ld-Din	Nasiru'ld-Dín
 16	Nasiru’d-Din	Nasiru’d-Dín
-2	Nasr-ed-Din	Nasr-ed-Dín
 4	Nasru'd-Din	Nasru'd-Dín
 1	Nasru'llah-Khan-i-Nuri	Nasru'llah-K_hán-i-Núrí
 1	Nasru'llah-i-Tafrishi	Nasru'llah-i-Tafrís_hí
-1	Nassar-Ed-Din-S_háh	Nassar-Ed-Dín-S_háh
-2	Nasser-Ed-Din	Nasser-Ed-Dín
-1	Nasser’Ud-Din-S_háh’s	Nasser’Ud-Dín-S_háh’s
 1	NatBahá’í	NatBahai
 1	Navváb/Navvábbih	Navváb/Navábbih
 1	Navvábih	Navvabih
@@ -1037,7 +1028,6 @@
 1	Ni'matu'llah-i-Mázindaráni	Ni'matu'llah-i-Mázindarání
 1	Nizami'd-Din	Nizami'd-Dín
 3	Nizamu'd-Din	Nizamu'd-Dín
-1	Nizam’Ud-Dawla	Nizam’Ud-Dawlih
 16	Nuri	Núrí
 12	Nuri'd-Din	Núrí'd-Dín
 2	Nuri'd-Din's	Núrí'd-Dín's
@@ -1061,6 +1051,8 @@
 1	Pás_hálik	Pashalik
 3	Pás_háliks	Pashaliks
 1	P‘AKKÁGE	PACKAGE
+1	P‘ALÍ	PALI
+1	P‘ALÍ--The	PALI--The
 18	Qa'in	Qá'in
 1	Qa'ini	Qá'iní
 2	Qasidiy-i-Varqaiyyih	Qasidiy-i-Varqáiyyih
@@ -1091,7 +1083,7 @@
 26	RUHIYYIH	RÚḤÍYYIH
 2	RUHIYYIH RABBANI'S	RÚḤÍYYIH RABBÁNÍ'S
 2	Radiyu'd-Din	Radiyu'd-Dín
-1	Radiyu'd-Din Abú’l-Qásim	Radiyu'd-Dín Abu’l-Qásim
+1	Radiyu'd-Din Abú’l-Qásim	Radiyu'd-Dín
 1061 Rahmat	Raḥmat
 2	Rahmat Muhajir	Raḥmat Muḥájír
 1	Rahmat Muhajir--we	Raḥmat Muḥájír--we
@@ -1115,15 +1107,16 @@
 1	Riday-i-Kirmani	Riday-i-Kirmání
 4	Riḍá-Quliy-i-Tafrishi	Riḍá-Quliy-i-Tafrís_hí
 1	Riḍá-yi-Kirmani	Riḍá-yi-Kirmání
-1	Riḍáy-i-_S_hírází	Riḍáy-i-_Shírází
 12	Rukni'd-Din	Rukni'd-Dín
 1	Ruknu'd-Dawla	Ruknu'd-Dawlih
 1	Ruknu'd-Din	Ruknu'd-Dín
 14	Rúḥángíz	Rúḥángiz
 1	RúḥíyyihK_hánum	RúḥíyyihKhanum
 2	SAMANDARI	SAMANDARÍ
+51	SA‘ÍD	
 1	SHIISLÁM	SHIISLAM
 35	SHIRAZ	S_HÍRÁZ
+1	SHÍQÁN	SHIKAN
 3	SIYAH-CHAL	SÍYÁH-C_HÁL
 2	SULAYMAN	SULAYMÁN
 1	SULAYMAN KHAN-I-TUNUKABANI	SULAYMÁN K_HÁN-I-TUNUKABANI
@@ -1140,6 +1133,7 @@
 1	S_hayk_hie	S_hayk_hí
 77	S_hayk_his	S_hayk_hís
 1	S_hayk_his--his	S_hayk_hís--his
+1	S_hayk_h‘Alí-Akbar-i-Quchani	S_hayk_h'‘Alí-Akbar-i-Quchani
 7	S_hírázee	S_hírází
 1	Sa'da'd-Din	Sa'da'd-Dín
 1	Sa'di'd-Din-i-Taftazani--suffered	Sa'di'd-Dín-i-Taftazani--suffered
@@ -1167,7 +1161,7 @@
 3	Safiyu'd-Din	Safiyu'd-Dín
 8	Safiyyi'd-Din	Safiyyi'd-Dín
 1	Safiyyi'd-Din's	Safiyyi'd-Dín's
-1	Sag-i-Kashi	Sag-i-Kashí
+1	Sag-i-Kashi	Sag-i-Ka<u>sh<u>í
 1	Sakínih-Sulṭán\lK_hánum	Sakínih-SulṭánK_hánum
 11	Salahi'd-Din	Salahi'd-Dín
 1	Salahi'd-Din-i-Ayyubi	Salahi'd-Dín-i-Ayyubi
@@ -1189,14 +1183,17 @@
 4	Sardar-i-Zafar	Sardár-i-Zafar
 1	Sarimu'd-Dawla	Sarimu'd-Dawlih
 4	Sayed	Siyyid
-2	Sayfad-Din	Sayfad-Dín
 10	Sayfi'd-Din	Sayfi'd-Dín
 5	Sayfu'd-Dawla	Sayfu'd-Dawlih
 2	Sayfu'd-Dawla's	Sayfu'd-Dawlih's
 2	Sayfu'd-Din	Sayfu'd-Dín
-1	Sayyed Abu’l	Siyyid Abul
+1	Sayyed	Siyyid
 1	Sa’id	Sa‘íd
 1	Sa‘idu'l-‘Ulamá	Sa‘ídu'l-‘Ulamá
+104	Sa‘íd	
+1	Sa‘íd--so	--so
+2	Sa‘íd.'	'
+1	Sa‘íd]--the	]--the
 1	Seyad	Siyyid
 2	Seyid	Siyyid
 1	Seyids	Siyyids
@@ -1238,7 +1235,7 @@
 1	Shiblu'd-Dawla	Shiblu'd-Dawlih
 1	Shihabi'd-Din	Shihabi'd-Dín
 9	Shihabu'd-Din	Shihabu'd-Dín
-1	Shimr-i-Kashi	Shimr-i-Kashí
+1	Shimr-i-Kashi	Shimr-i-Ka<u>sh<u>í
 1	Shirvan-Shahs	Shirvan-S_háhs
 7	Shogi	Shoghi
 2	Shogie	Shoghi
@@ -1246,7 +1243,9 @@
 2	Sháhrúd	S_háhrúd
 3	Sháhs	S_háhs
 2	Sháhzádih	S_háhzádih
+1	Siyyid‘Alí	Siyyid'‘Alí
 3	Sulṭánu'd-Dawla	Sulṭánu'd-Dawlih
+1	Sulṭán‘Abdu’l-Ḥamíd	Sulṭán'‘Abdu’l-Ḥamíd
 2	TABARSI	ṬABARSÍ
 13	TABRIZ	TABRÍZ
 4	TAHIRIH	ṬÁHIRIH
@@ -1291,12 +1290,14 @@
 1	Turshízí	Turs_hízí
 1	Tálib	Talib
 1	UBAHÁ	UBAHA
-1	Ud-Din	Ud-Dín
+1	UMT‘ALÍ	UMTALI
 1	Umm-A\lshraf	Umm-As_hraf
 1	Upeksha--Íqánimity	Upeksha--Equanimity
 2	Usuli'd-Din	Usuli'd-Dín
+1	VEṬIHRÁN	VETERAN
 1	Vahiyu'd-Din	Vahiyu'd-Dín
 2	Vajihu'd-Din	Vajihu'd-Dín
+1	Varqá	Varqa
 3	Vazir-i-Nuri	Vazir-i-Núrí
 2	Vizirial	Vizírial
 1	Word--ALLÁH–U–ABHÁ	Word--ALLÁH-U-ABHÁ
@@ -1315,7 +1316,6 @@
 7	Zaynu'd-Din	Zaynu'd-Dín
 1	ZaÍqánf	ZaIqanf
 4	Zeynu'd-Din	Zeynu'd-Dín
-1	Zia-ed-Din	Zia-ed-Dín
 1	Zunuz	Zunúz
 9	Zunuzi	Zunúzí
 2	Zunuzi's	Zunúzí's
@@ -1335,15 +1335,13 @@
 1	[Nasiru’d-Din	[Nasiru’d-Dín
 1	[Seyyed	[Siyyid
 1	[Tabriz	[Tabríz
-1	[^4B]ahá’í	[^4B]ahá'í
+1	[of‘Abdu’l-Bahá	[of'‘Abdu’l-Bahá
 1	[‘Akkál	[Akkal
 1	_(Bahá’ísm	_(Bahá'ism
-1	_Abhá_	_Abha_
-1	_Alláho’Abhá_	_Allaho’Abhá_
+1	_Alláho’Abhá_	_Alláh-u-Abhá_
 2	_Alláhu Abhá_	_Alláh-u-Abhá_
 1	_Alláh–u–Abhá_	_Alláh-u-Abhá_
 2	_Alláh–u–Abhás_	_Alláh-u-Abhás_
-1	_Bahá’u’lláh_	_Baha’u’llah_
 1	_Bahá’u’lláhsi	_Bahá'u'llahsi
 7	_Bahá’ísm	_Bahaism
 1	_Bahá’ísm	_Bahá'ism
@@ -1351,8 +1349,6 @@
 4	_Bahá’ísmus_	_Bahá'ismus_
 2	_Bahá’ítum	_Bahá'itum
 1	_Bábs_	_Babs_
-1	_K_hán	_Khán
-3	_K_hánum	_Khánum
 1	_Kitáb-i-Asma'_	_Kitáb-i-Asmá’_
 17	_Kitábu'l-Asmá'_	_Kitábu'l-Asmá’_
 1	_Kitábu'l-Asmá_	_Kitábu'l-Asmá’_
@@ -1361,17 +1357,11 @@
 3	_Mustaghath_	_Mustag_hát_h_
 1	_Nasiru’d-Din	_Nasiru’d-Dín
 1	_S_hayk_hi	_S_hayk_hí
-2	_S_háh	_Sháh
-5	_S_híráz	_Shíráz
-1	_S_hírází	_Shírází
 8	_Seyyed	_Siyyid
 1	_Sharh-i-Asmá'u'llah_	_Sharh-i-Asmá’'u'llah_
-1	_ad-Din	_ad-Dín
 1	_al-Bahá’íyyah_	_al-Bahá'iyyah_
 1	_ismu'l-a'zam_)--Alláh–u–Abhá--has	_ismu'l-a'zam_)--Alláh-u-Abhá--has
-1	ad-Dawla	ad-Dawlih
-23	ad-Din	ad-Dín
-2	ad-Din_	ad-Dín_
+1	about‘Abdu’l-Bahá's	about'‘Abdu’l-Bahá's
 3	al-'Arab	al-‘Arab
 3	al-'Ilm	al-‘Ilm
 1	al-Asma	al-Asmá’
@@ -1381,18 +1371,25 @@
 35	al-Baqir	al-Báqir
 4	al-Baqir's	al-Báqir's
 1	al-Bastami	al-Bastamí
-1	al-Bayánu'l-'Arabi	al-Bayanu'l-'Arabi
-1	al-Kashi	al-Kashí
+1	al-Bayánu'l-'Arabi	al-Bayánu’l-‘Arabí
+1	al-Kashi	al-Ka<u>sh<u>í
+1	al-Majlisi'	al-Majlisí'
 1	al-Masa'il	al-Masá’il
 1	al-Mashhad	al-Mas_hhad
 1	al-‘Abbási	al-'Abbasi
 1	al-Ḥadít_ha	al-Hádítha
-1	and'Abdu'1-Bahá	and‘Abdu’l-Bahá
+1	and'Abdu'1-Bahá	and'‘Abdu’l-Bahá
+1	and‘Abdu’l-Bahá_	and'‘Abdu’l-Bahá_
 1	anti-S_hayk_hi	anti-S_hayk_hí
 1	as-Sa’id	as-Sa‘íd
 1	at-Tabrizi	at-Tabrízí
 1	at-Ṭihráni	at-Ṭihrání
 1	authorities.--ABU’L-FADL	authorities.--ABU’L-FAḌL
+1	a‘Abdu’l-Bahá	a‘‘Abdu’l-Bahá
+1	by‘Abdu’l-Bahá	by'‘Abdu’l-Bahá
+1	by‘Abdu’l-Bahá	byAbdul Bahá
+1	by‘Abdu’l-Bahá	by‘‘Abdu’l-Bahá
+1	by‘Alí-Kuli	byAli-Kuli
 1	dK_hán	dKhán
 1	himself.--ABU’L-FADL	himself.--ABU’L-FAḌL
 1	i-Abhár	i-Abhar
@@ -1431,13 +1428,22 @@
 2	lShay\lkhí	S_hayk_hí
 1	lShay\lkh‘Ábid	S_hayk_h‘Ábid
 1	lShíráPersia	S_híráPersia
+3	la‘Abbás	laAbbás
 1	lkhán	k_hán
+1	l‘Iráq	l'‘Iráq
 1	madu'd-Dawla	madu'd-Dawlih
 1	non-S_hayk_hi	non-S_hayk_hí
 4	non-S_hayk_his	non-S_hayk_hís
+1	n‘Akká	nAkká
 1	ofBahá’u’lláh	ofBaha'u'llah
 1	ofBahá’u’lláh	ofBaha’u’llah
 1	ofBahá’í	ofBaha'i
+11	of‘Abdu’l-Bahd	of'‘Abdu’l-Bahd
+4	of‘Abdu’l-Bahá	of'‘Abdu’l-Bahá
+1	of‘Abdu’l-Bahá	ofAbdu'l-Bahá
+2	of‘Abdu’l-Bahá	ofAbdul-Bahá
+1	of‘Abdu’l-Bahá's	of'‘Abdu’l-Bahá's
+1	of‘Is_hqábád	ofIshqabad
 7	sheikh	s_hayk_h
 1	sheikh's	s_hayk_h's
 2	sheikhs	s_hayk_hs
@@ -1445,6 +1451,7 @@
 1	ta\lkht-i-raván	tak_ht-i-raván
 2	the	El
 1	theBáb	theBab
+1	to‘Abdu’l-Bahá	to'‘Abdu’l-Bahá
 1	|Ḥadít_hs	|Hádíths
 1	Áqá-Mírzá-Haydar-‘Alí	Áqá-Mírzá-Ḥaydar-‘Alí
 87	Áqáy-i-Kalim	Áqáy-i-Kalím
@@ -1455,6 +1462,7 @@
 1	ááTa\lkht-i-Raván	ááTak_ht-i-Raván
 1	‘ABBÁSI	'ABBASI
 1	‘ABBÁSIYAN	'ABBASIYAN
+1	‘ABDU’L-BAHÁ	ABDUL BAHÁ
 4	‘ABDU’L-BAHÁS	ABDULBAHAS
 1	‘ABDU’L-BAHÁiS	‘ABDU’L-BAHAiS
 6	‘ABDU’L-HAMID	‘ABDU’L-ḤAMÍD
@@ -1484,9 +1492,11 @@
 1	‘Abdu’1-Bahá.”	‘Abdu’l-Bahá.”
 1	‘Abdu’l -Bahá	‘Abdu’l-Bahá
 2	‘Abdu’l-'Aliy-i-Hirati	‘Abdu’l-‘Alíy-i-Hirati
+1	‘Abdu’l-Bahá	'‘Abdu’l-Bahá
 1	‘Abdu’l-Baháa's	‘Abdu’l-Bahá's
 4	‘Abdu’l-Bahár	‘Abdu’l Behar
 58	‘Abdu’l-Bahás	‘Abdu’l-Bahas
+1	‘Abdu’l-Bahá‘Abbás	‘Abdu’l-Bahá‘‘Abbás
 1	‘Abdu’l-Bahá’ímmediately	‘Abdu’l-Baháimmediately
 5	‘Abdu’l-Karim-i-Ṭihráni	‘Abdu’l-Karim-i-Ṭihrání
 1	‘Abdu’l-Majíd-i-Maraghi'i	‘Abdu’l-Majíd-i-Marág_hi'í
@@ -1527,9 +1537,6 @@
 2	“Bahá-ullah”	“Bahá’u’lláh”
 1	‘I\lshqábád	‘Is_hqábád
 1	‘Iráq-i-'Arab	‘Iráq-i-‘Arab
-1	“Muḍaffar-ed-Din	“Muḍaffar-ed-Dín
-1	‘Ud-Dawla	‘Ud-Dawlih
-3	‘Ud-Din	‘Ud-Dín
 2	Ḥadít_h-i-Mashiyyat	Ḥadít_h-i-Mas_híyyat
 1	Ṭaráz’u’lláh	Taraz’u’lláh
 1	Ḥasan-i-Bahjístani	Ḥasan-i-Bajistani
@@ -1557,7 +1564,7 @@
 19	Ḥusayn-i-Bushru'i	Ḥusayn-i-Bus_hrú'í
 1	Ḥusayn-i-Bushru'i_	Ḥusayn-i-Bus_hrú'í_
 3	Ḥusayn-i-Bushrú'í	Ḥusayn-i-Bus_hrú'í
-2	Ḥusayn-i-Kashi	Ḥusayn-i-Kashí
+2	Ḥusayn-i-Kashi	Ḥusayn-i-Ka<u>sh<u>í
 5	Ḥusayn-i-Kás_háni	Ḥusayn-i-Kás_hání
 1	Ḥusayn-i-S_hírázíy-i-Khurtumi	Ḥusayn-i-Shiraziy-i-Khurtumi
 2	Ḥusayn-i-Turshizi	Ḥusayn-i-Turs_hízí
@@ -1575,6 +1582,7 @@
 75	Ḥájíbu'd-Dawlih	Ḥajíbu’d-Dawlih
 1	Ḥájíbu'ld-Dawlih	Ḥajíbu’d-Dawlih
 2	Ḥájíyyih	Hajiyyih
+1	Ḥájí‘Alí	Ḥájí'‘Alí
 1	Ḍíyá\lK_hánum	ḌíyáK_hánum
 2	‘‘Umars	‘Umars
 1	“Ḥájíb-ed-Dawla,”	“Ḥajíbu’d-Dawlih,”
