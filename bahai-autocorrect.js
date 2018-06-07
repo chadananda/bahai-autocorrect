@@ -96,7 +96,8 @@ const commonMisspellings = [
   "B[úu]shih?r() = Bú<u>sh</u>ihr",
   "Ba(?:<u>)?gh?(?:</u>)?d[aá]d[iíI](s?) = Ba<u>gh</u>dádí",
   "Bab = Báb",
-  "Badi = Badi‘",
+  "Badi' = Badí‘",
+  "Bad[ií]'?[uo]'?() = Badí‘u’",
   "Bag[h]?d[aá]d() = Ba<u>gh</u>dád",
   "B[áa](?:gh|q)[ie]r = Báqir",
   "Bah[áa] = Bahá",
@@ -532,7 +533,7 @@ BahaiAutocorrect.prototype.correct = function() {
                 // The word diff program lets simple words thorugh, like "of" or "and"; remove these
                 if (v !== removed[i]) {
                   // return a line for the single word, with punctuation removed
-                  return removed[i].replace(trimRE, '') + '\t' + v.replace(trimRE, '')
+                  return v.replace(trimRE, '') + '\t' + removed[i].replace(trimRE, '')
                 }
               }).filter(v => v).join('\n')
             }
@@ -540,7 +541,7 @@ BahaiAutocorrect.prototype.correct = function() {
             // or if the added section contains one word or none,
             else {
               // USE ENTIRE CHANGE
-              return (v.remove.replace(trimRE, '') || '') + '\t' + (v.add.replace(trimRE, '') || '')
+              return (v.add.replace(trimRE, '') || '') + '\t' + (v.remove.replace(trimRE, '') || '')
             }            
           } else {
             return ''
