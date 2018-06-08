@@ -38,9 +38,10 @@ const commonMisspellings = [
   "'?Abb[aá]ss? = ‘Abbás",
   "'?Abd[uo]'?l = ‘Abdu’l",
   "'?Abd[uo]'?ll[aá]h? = ‘Abdu’lláh",
-  "'?Abd[uo]l = ‘Abdu’l",
-  "'?Abd[uoe]'?l[- ]*Babs = ‘Abdu’l-Bahá", // ADDED
-  "'?Abd[uoe]'?[l1]'?[- ]*B[ea]h[aá]a? = ‘Abdu’l-Bahá",
+  "'?Abd[uoei]+'?[l1LI] = ‘Abdu’l",
+  "'?Abd[uoei]+'?l[- ]*Babs = ‘Abdu’l-Bahá", // ADDED
+  "'?Abd[ou][-' ]l[-' ]Bah[aá] = ‘Abdu’l-Bahá",
+  "'?Abd[uoei]+'?[l1I]*'*[- ]*B[ea]h[aá]a? = ‘Abdu’l-Bahá",
   "'Al[aá]'([u]?) = ‘Alá’", // ADDED
   "'?Al[ií](y?) = ‘Alí",
   "'?Al[ií][- ]Akb[aá]r = ‘Alí-Akbar",
@@ -60,7 +61,7 @@ const commonMisspellings = [
   "Ab[uú][-] = Abú-",
   "Abul'?[- ]? = Abu'l-", // ADDED
   "Ab[uú]'?([lsh]+)[-] ? = Abu’$1-",
-  "Ab[uú]'?l[- ]*(\\n?)[GQ][áa]s[ie]m = $1Abu’l-Qásim", // This was changed from Abú'l-Qásim, which seems to be a misspelling
+  "Ab[uú]'?l[- ]*(\\n?)[GQ][áa]s[ie]m = Abu’l-$1Qásim", // This was changed from Abú'l-Qásim, which seems to be a misspelling
   "Abb[uú]d = Abbúd",
   "Abha = Abhá",
   "Abu'?l[-_ ]+Fa[dḍz]h?le? = Abu’l-Faḍl",
@@ -502,9 +503,6 @@ BahaiAutocorrect.prototype.correct = function() {
   }.bind(this))
 
   if (this.debug) {
-    // Trim punctuation from the beginning and end of words
-    let trimRE = /(^[\s,\.\(\)"!\?;:]*)|([\]\[,\.\(\)"!\?;:\*^F0-9]*$)/g
-
     // Diff must be performed line by line, so get an array of the cleaned and corrected texts
     let clean = this.clean.split('\n')
     let corrected = this.str.split('\n')
@@ -513,41 +511,12 @@ BahaiAutocorrect.prototype.correct = function() {
     if (clean.length === corrected.length) {
 
       // GET LINE
-      this.diff = clean.map((line,i) => {
+      this.diff = clean.reduce((diff,line,i,a) => {
         // If the lines are exactly equal, just return
-        if (line === corrected[i]) return false
+        if (line === corrected[i]) return diff
         // GET CHANGES
-        return wordDiff.diffString(line, corrected[i]).map((v) => {
-          // For any sections where there are differences
-          if (v.remove || v.add) {
-            // Trim the results
-            v.add = v.add.trim()
-            v.remove = v.remove.trim()
-            // Some changed sections include multiple words which should be recorded separately
-            let added = (v.add.split(/\s+/) || [])
-            let removed = (v.remove.split(/\s+/) || [])
-            // If the added and removed sections contain the same number of words, split them
-            if (added.length > 1 && (added.length === removed.length)) {
-              // GET WORDS
-              return added.map((v,i) => {
-                // The word diff program lets simple words thorugh, like "of" or "and"; remove these
-                if (v !== removed[i]) {
-                  // return a line for the single word, with punctuation removed
-                  return v.replace(trimRE, '') + '\t' + removed[i].replace(trimRE, '')
-                }
-              }).filter(v => v).join('\n')
-            }
-            // If the added and removed sections contain different numbers of words, 
-            // or if the added section contains one word or none,
-            else {
-              // USE ENTIRE CHANGE
-              return (v.add.replace(trimRE, '') || '') + '\t' + (v.remove.replace(trimRE, '') || '')
-            }            
-          } else {
-            return ''
-          }
-        }).filter(v => v).join('\n')
-      }).filter(v => v).join('\n')
+        return diff + new DiffChange(wordDiff.diffString(line, corrected[i])).splitDiff(/--/g).splitDiff(/\s+/g).toString()
+      }, '')
     }
   }
 
@@ -567,6 +536,49 @@ BahaiAutocorrect.prototype.toString = function() {
   return this.str
 }
 
+class DiffChange {
+  /**
+   * @param {array} changeList an array of changes from require('word-diff').diffString(str1, str2)
+   */
+  constructor(changeList) {
+    this.changeList = changeList
+  }
+}
+DiffChange.prototype.splitDiff = function(regex) {
+  let newChangeList = []
+  for (let change of this.changeList) {
+    if (change.remove || change.add) {
+        // Trim the results
+      change.add = change.add.trim()
+      change.remove = change.remove.trim()
+      // Some changed sections include multiple words which should be recorded separately
+      let addList = (change.add.split(regex) || [])
+      let removeList = (change.remove.split(regex) || [])
+      // If the added and removed sections contain the same number of words, split them
+      if (addList.length > 1 && (addList.length === removeList.length)) {
+        // GET WORDS
+        for (let i=0; i<addList.length; i++) {
+          if (removeList[i] !== addList[i]) newChangeList.push({remove: removeList[i], add: addList[i]})
+        }
+      }
+      // If the added and removed sections contain different numbers of words, 
+      // or if the added section contains one word or none,
+      else {
+        // USE ENTIRE CHANGE
+        newChangeList.push(change)
+      }
+    }
+  }
+  this.changeList = newChangeList
+  return this
+}
+DiffChange.prototype.toString = function() {
+  let trimRegex = /(^[\s,\.\(\){"“”'!\?;:]*)|([\]\[,\.\(\)"“”'!\?;:\*^F0-9]*$)/g
+  return this.changeList.reduce((text,change,i,a) => {
+    let line = `${change.add.trim().replace(trimRegex, '')}\t${change.remove.trim().replace(trimRegex, '')}`
+    return (line.trim().length ? text + line + '\n' : text)
+  }, '')
+}
 
 module.exports = BahaiAutocorrect
 
