@@ -26,19 +26,22 @@ const endWord = `(?![${wordChar}])`
   // $1 is implied if the parenthetical set is at the end of the [find] section.
 const commonMisspellings = [
   // REPLACE FIRST - DO NOT SORT!
+  "$1u’l- = ()u'[l1LI][-](?![-]) ?([A-Z])", // u'l-
+  "$1u’$2-$3 = ()u'([dnrstz])[-] ?([DNRSTZdnrstz])", // e.g. u'd-D
+  "‘Abdu’l- = '?Abd[uoei]+'?[l1LI][-]? ?",
+  "‘Abdu’l- = ‘Abdu’l[-]{2,}()",
+  "u’l-Islám = u'l[-]Islam",
+  "<u>Sh</u>ay<u>kh</u>u’$1 = Sh(?:ay|ei)k['h]*[Eua]'?([ldnrstz])",
+  "$1u’lláh = ()[ou]'ll[aá]h()",
+  "$1u’lláhí = ()[ou]'lláhi",
 
-  // REPLACE IN ANY ORDER
+  // REPLACE IN ANY ORDER - SORT THESE!
   "‘Abbás = '?Abb[aá]ss?",
   "‘Abbásid = '?Abb[aá]ss?ide?(s?)",
-  "‘Abdu’l = '?Abd[uo]'?l",
-  "‘Abdu’l = '?Abd[uoei]+'?[l1LI]",
   "‘Abdu’l-‘Aẓím = '?Ab[d]?u'?l[-]'?A[zẓ][ií]m",
   "‘Abdu’l-Bahá = '?Abd[ou][-' ]l[-' ]Bah[aá]",
   "‘Abdu’l-Bahá = '?Abd[uoei]+'?[l1I]*'*[- ]*B[ea]h[aá]a?",
   "‘Abdu’l-Bahá = '?Abd[uoei]+'?l[- ]*Babs", // ADDED
-  "‘Abdu’l-Ḥamíd = ‘Abdu’l\\s+Ḥamíd",
-  "‘Abdu’l-Ḥasan = ‘Abdu’l\\s+Ḥasan",
-  "‘Abdu’l-Ḥusayn = ‘Abdu’l Ḥusayn",
   "‘Abdu’lláh = '?Abd[uo]'?ll[aá]h?",
   "‘Akká = '?A[ck][ck][aá]",
   "‘Alá’ = 'Al[aá]'([u]?)", // ADDED
@@ -84,7 +87,6 @@ const commonMisspellings = [
   "<u>Sh</u>ay<u>kh</u> = Sheikh?()",
   "<u>sh</u>ay<u>kh</u> = sheikh?()",
   "<u>Sh</u>ay<u>kh</u>í = Shaykh[ií]e?(s?)", // ADDED
-  "<u>Sh</u>ay<u>kh</u>u’$1 = Shaykh'?[Eua]'?([ldrstz])",
   "<u>Sh</u>ay<u>kh</u>u’l-Islám = <u>Sh</u>ay<u>kh</u>u’l-Isl[aá]m",
   "<u>Sh</u>í‘ah = Sh[ií][ií]?'?[aei]h(s?)", // 54 in GPB
   "<u>Sh</u>íráz = Sh[ií]r[áa]z",
@@ -96,7 +98,7 @@ const commonMisspellings = [
   "Abhá = Abha",
   "Abú- = Ab[uú][-]",
   "Abu'l- = Abul'?[- ]?", // ADDED
-  "Abu’$1- = Ab[uú]'?([lsh]+)[-] ?",
+  "Abu’l- = Ab[uú]'?[lI][-] ?",
   "Abu’l-Faḍl = Abu'?l[-_ ]+Fa[dḍz]h?le?",
   "Abu’l-Faḍl = Abu’l\\s+Faḍl",
   "Abu’l-Qásim = Ab[uú]'?l[- ]*[GQ][áa]s[ie]m", // This was changed from Abú'l-Qásim, which seems to be a misspelling
@@ -402,11 +404,10 @@ const commonMisspellings = [
   "ziná = zina",
   "Zunúz = Zunuz",
   "Zunúzí = Zun[uú]zi",
-  // "Imám = Im[aá]m()",
-  // "Islám = Isl[aá]m()",
 
   // REPLACE LAST - DO NOT SORT!
-  "‘Alí-Muḥammad = ‘Alí Muḥammad",
+  "‘Alí-Muḥammad = ‘Alí Muḥammad", // ‘Alí and Muḥammad both replaced earlier; this is just for the space
+  "$1u’<u>$2</u>-<u>$3</u> = ()[aeiou]'([dst]h)[-] ?(?:<u>)?([DSTdst]h)", // u'sh-Sh
   
 ];
 
@@ -467,7 +468,7 @@ BahaiAutocorrect.prototype.correct = function() {
         // Handle the end of the word
         .replace('()', anyWord)
         // Handle hyphens and en-dashes
-        .replace(/\[-/g, '[-–\x1E')
+        .replace(/\[-/g, '[-–\x1E·')
         // Handle apostrophes of all kinds
         .replace(/'(?!\])/g,"[‘’']")
         // Handle apostrophes within character classes
@@ -484,7 +485,7 @@ BahaiAutocorrect.prototype.correct = function() {
         }
         else {
           repl = '$1' + repl.split(/\$\d{1}/g).reduce((t,v,i,a) => {
-            return t + '$' + (i+1)
+            return t + '$' + (i+1) + v
           })
         }
         sets += 1
@@ -499,8 +500,8 @@ BahaiAutocorrect.prototype.correct = function() {
           return t + (t.slice(-1) === '\\' ? c : c.toUpperCase())
         }).replace(/<(\/?)u>/ig, '<$1u>')
 
-        findRE = new RegExp(startWord + find + endWord, 'gm')
-        findUpperRE = new RegExp(startWord + findUpper + endWord, 'gm')
+        let findRE = new RegExp(startWord + find + endWord, 'gm')
+        let findUpperRE = new RegExp(startWord + findUpper + endWord, 'gm')
   
 
         this.str = this.str.replace(findRE, repl)
@@ -526,6 +527,10 @@ BahaiAutocorrect.prototype.correct = function() {
         // GET CHANGES
         return diff + new DiffChange(wordDiff.diffString(line, corrected[i])).splitDiff(/--/g).splitDiff(/\s+/g).toString()
       }, '')
+    }
+    else {
+      this.diff = "0-length file"
+      console.error('bahai-autocorrect change the number of lines in the file; this should not happen.')
     }
   }
 
