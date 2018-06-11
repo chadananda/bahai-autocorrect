@@ -86,7 +86,7 @@ const commonMisspellings = [
   "<u>Sh</u>ay<u>kh</u> = Shaykh()",
   "<u>Sh</u>ay<u>kh</u> = Sheikh?()",
   "<u>sh</u>ay<u>kh</u> = sheikh?()",
-  "<u>Sh</u>ay<u>kh</u>í = Shaykh[ií]e?(s?)", // ADDED
+  "<u>Sh</u>ay<u>kh</u>í = <u>Sh</u>ay<u>kh</u>[ií]e?(s?)", // ADDED
   "<u>Sh</u>ay<u>kh</u>u’l-Islám = <u>Sh</u>ay<u>kh</u>u’l-Isl[aá]m",
   "<u>Sh</u>í‘ah = Sh[ií][ií]?'?[aei]h(s?)", // 54 in GPB
   "<u>Sh</u>íráz = Sh[ií]r[áa]z",
@@ -98,7 +98,7 @@ const commonMisspellings = [
   "Abhá = Abha",
   "Abú- = Ab[uú][-]",
   "Abu'l- = Abul'?[- ]?", // ADDED
-  "Abu’l- = Ab[uú]'?[lI][-] ?",
+  "Abu’l- = Ab[uú]'?[lI][-] ?()",
   "Abu’l-Faḍl = Abu'?l[-_ ]+Fa[dḍz]h?le?",
   "Abu’l-Faḍl = Abu’l\\s+Faḍl",
   "Abu’l-Qásim = Ab[uú]'?l[- ]*[GQ][áa]s[ie]m", // This was changed from Abú'l-Qásim, which seems to be a misspelling
@@ -407,7 +407,7 @@ const commonMisspellings = [
 
   // REPLACE LAST - DO NOT SORT!
   "‘Alí-Muḥammad = ‘Alí Muḥammad", // ‘Alí and Muḥammad both replaced earlier; this is just for the space
-  "$1u’<u>$2</u>-<u>$3</u> = ()[aeiou]'([dst]h)[-] ?(?:<u>)?([DSTdst]h)", // u'sh-Sh
+  "$1u’<u>$2</u>-<u>$3</u> = ()[ou]'([dst]h)[-] ?(<[uU]>|[DSTdst]h)", // u'sh-Sh
   
 ];
 
@@ -470,9 +470,9 @@ BahaiAutocorrect.prototype.correct = function() {
         // Handle hyphens and en-dashes
         .replace(/\[-/g, '[-–\x1E·')
         // Handle apostrophes of all kinds
-        .replace(/'(?!\])/g,"[‘’']")
+        .replace(/'(?!\])/g,"[‘’'·]")
         // Handle apostrophes within character classes
-        .replace(/(\[[^\]]*)\[‘’'\]/, "$1‘’'")
+        .replace(/(\[[^\]]*)\[‘’'·\]/, "$1‘’'·")
 
       if (new RegExp(startWord + find + endWord, 'gi').test(this.str)) {
 
@@ -533,6 +533,10 @@ BahaiAutocorrect.prototype.correct = function() {
       console.error('bahai-autocorrect change the number of lines in the file; this should not happen.')
     }
   }
+
+  // Some minor cleanup
+  this.str = this.str
+    .replace(/·/g, ' ')
 
   // STRIP TAGS - TODO: remove this?
   if (this.stripTags) {
