@@ -94,6 +94,7 @@ const commonMisspellings = [
   "<u>Sh</u>írází = Sh[ií]r[áa]zee",
   "A<u>dh</u>irbáyján = Adh[ií]rb[áa]yj[áa]n",
   "A<u>gh</u>ṣán = Aghs[aá]n()",
+  "Á<u>sh</u><u>ch</u>í = [AÁ]shch[ií]",
   "Abbúd = Abb[uú]d",
   "Abhá = Abha",
   "Abú- = Ab[uú][-]",
