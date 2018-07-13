@@ -422,6 +422,7 @@ const commonMisspellings = [
 
 class BahaiAutocorrect {
   constructor(str = '', stripTags = false, debug = false) {
+    str = ' ' + str // we add a space at the beginning of the string, or else the first word gets ignored
     this.original = str
     this.clean = str
     this.str = str
@@ -556,6 +557,8 @@ BahaiAutocorrect.prototype.correct = function() {
   this.str = this.str
     // fix the Ayn in case it shows up at the beginning of an attribute value
     .replace(/([a-z])=‘([AI])/ig, "$1='$2")
+    // remove the space that we added to the beginning of the string
+    .replace(/^ /m, '')
   
 }
 
