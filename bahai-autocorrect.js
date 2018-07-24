@@ -560,6 +560,12 @@ BahaiAutocorrect.prototype.correct = function() {
     // remove the space that we added to the beginning of the string
     .replace(/^ /m, '')
   
+  return this
+}
+
+BahaiAutocorrect.prototype.stripUnderlines = function() {
+  this.str = this.str.replace(/<[uU]>([CDGKSTZcdgkstz])([hH])<\/[uU]>/gm, '$1_$2')
+  return this
 }
 
 BahaiAutocorrect.prototype.toString = function() {
