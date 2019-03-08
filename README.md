@@ -9,22 +9,13 @@ npm install --save bahai-autocorrect
 
 ### Functionality
 ``` Javascript
-var bac = require('bahai-autocorrect');
-
-var fixedStr = bac.correct(str)
-// Identifies and corrects common Baha'i term misspellings. Usually won't corrupt HTML.
-// for example: bac.correct("Akb^ar Babi Mulla Husayn")
-// output: Akbár Bábí Mullá Ḥusayn
+const BahaiAutocorrect = require('bahai-autocorrect');
+let str = 'Haji Mirza Haydar-Ali'
+let bahaiAutocorrect = new BahaiAutocorrect(str).correct()
+let fixedStr = bahaiAutocorrect.toString()
 ```
 
-### Note: underscore rules were changed
+### Underlined transliterations
+By default, this library outputs underlined transliterations (ch, dh, gh, kh, sh, th, zh) as html with \<u> tags, e.g. "Síyáh-\<u>Ch\</u>ál".
 
-Previously, transliterated underscores were done like this: `_Kh` `_Dh` etc.
-
-Now, the underscore must be in the middle of the two characters like `K_h` and `D_h`
-
-This is to make it compatible with Markdown which uses underscores beore a word for italics. (As it turns out, book titles are typically italicized and often begin with "_The")
-
-### Demo
-
-Browser jsfiddle demo: https://jsfiddle.net/chadananda/u3fy3qm9/
+If you wish to use underscore notation, (e.g. "C_hál", you can run `BahaiAutocorrect.stripUnderlines()`. Note that in this case the underscores go between the letters, not before them.
