@@ -1,7 +1,7 @@
 {
   "name": "bahai-autocorrect",
-  "version": "1.0.13",
-  "description": "Simple UTF-8 autocorrect for the most common Baha'i terms",
+  "version": "2.0.0",
+  "description": "Simple UTF-8 autocorrect for the most common Bahá’í terms",
   "main": "bahai-autocorrect.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
