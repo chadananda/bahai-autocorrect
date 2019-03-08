@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/chadananda/bahai-autocorrect/issues"
   },
-  "homepage": "https://github.com/chadananda/bahai-autocorrect#readme"
+  "homepage": "https://github.com/chadananda/bahai-autocorrect#readme",
+  "dependencies": {
+    "word-diff": "^1.0.1"
+  }
 }
