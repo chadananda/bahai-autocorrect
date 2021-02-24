@@ -22,7 +22,7 @@ const endWord = `(?![${wordChar}])`
   //
   // In the [replace] section:
   // -------------------------
-  // $1, $2, etc.     References sets in parentheses. 
+  // $1, $2, etc.     References sets in parentheses.
   // $1 is implied if the parenthetical set is at the end of the [find] section.
 const commonMisspellings = [
   // REPLACE FIRST - DO NOT SORT!
@@ -54,13 +54,13 @@ const commonMisspellings = [
   "‘Azíz = '?Az[ií]z",
   "‘Azíz’u’lláh = '?A[z]?z[ií]z'?[ou]'?ll[aá]h",
   "‘Azízu’lláh = '?Az[ieí][e]?z'?[uoOU]'?ll[aá]h?",
-  "‘I<u>sh</u>qábád = '?[IE]sh[qk]ab[aá][dt]", // Ishqabad
+  "‘I<u>sh</u>qábád = '?[IE]sh[qk][aá]b[aá][dt]", // Ishqabad
   "‘Ilm = '?Ilm", // ADDED
   "‘Ináyatu’lláh = '?[IE]n[áa]?y[aá]?t?'?[uOUo]'?ll[áa]h",
   "‘Iráq = '?Ir[áa]q",
   "‘Izzat = '?[EI]zzat",
-  "‘Ulamá = Ulema(s?)",
-  "‘Umar = [']?Umar",
+  "‘Ulamá = ['‘]?Ulema(s?)",
+  "‘Umar = ['‘]?Umar",
   "<u>Dh</u>ikr = Dhikr",
   "<u>Dh</u>ikru’lláh = Dhikr'?u'?ll[aá]h",
   "<u>Kh</u>adíjih = Khad[íi]j[ei]h",
@@ -94,7 +94,7 @@ const commonMisspellings = [
   "<u>Sh</u>írází = Sh[ií]r[áa]z[ií](s?)",
   "<u>Sh</u>írází = Sh[ií]r[áa]zee",
   "A<u>dh</u>irbáyján = Adh[ií]rb[áa]yj[áa]n",
-  "A<u>gh</u>ṣán = Aghs[aá]n()",
+  "A<u>gh</u>ṣán = Agh[sṣ][aá]n()",
   "Á<u>sh</u><u>ch</u>í = [AÁ]shch[ií]",
   "Abbúd = Abb[uú]d",
   "Abhá = Abha",
@@ -105,7 +105,7 @@ const commonMisspellings = [
   "Abu’l-Faḍl = Abu’l\\s+Faḍl",
   "Abu’l-Qásim = Ab[uú]'?l[- ]*[GQ][áa]s[ie]m", // This was changed from Abú'l-Qásim, which seems to be a misspelling
   "Administration = Administraiton",
-  "Af<u>gh</u>ánistán = Afghanistan",
+  "Af<u>gh</u>ánistán = Afgh[aá]nist[aá]n",
   "Af<u>sh</u>ar = Afshar",
   "Aflatún = Aflat[o]?un",
   "Afnán = Afn[aá]n()",
@@ -150,23 +150,23 @@ const commonMisspellings = [
   "Bayán = B[ae]y[aáe]n(s?)",
   "Bayánu’l-‘Arabí = Bay[aá]nu'l-'?Arabi", // ADDED
   "Beruit = Beyrout",
-  "Bi<u>sh</u>árát = Bisharat",
+  "Bi<u>sh</u>árát = Bish[aá]r[aá]t",
   "Bú<u>sh</u>ihr = B[úu]shih?r()",
-  "Bu<u>sh</u>rú’í = Bushr[uú]'[iíI]", // ADDED
+  "Bu<u>sh</u>rú’í = Bushr[uú]['’][iíI]", // ADDED
   "Bu<u>sh</u>rú’í = Bushruyieh",
   "Bu<u>sh</u>rúyyih = B[oa]shr[o]?u[a]?y[ea]h", // Boshrouyah
   "Burújird = Burujird", // ADDED
   "Burújirdí = Bur[uú]jird[iíI]", // ADDED
   "d-Dawlih = [d]-Dawla", // ADDED
   "d-Dín = [d]-Din", // ADDED
-  "Dáráb = Darab",
-  "Dárábí = Darabi",
-  "Dín = Dein",
-  "Ḍíyá’íyyih = Dia'iyyih",
+  "Dáráb = D[aá]r[aá]b",
+  "Dárábí = D[aá]r[aá]b[ií]",
+  // "Dín = Dein",
+  "Ḍíyá’íyyih = [DḌ]ia[’'][ií]yyih",
   "Effendi = Effendie?",
   "Faḍil = Fa[zd][ei]l()",
   "Faḍl = Fa[zd]l()",
-  "Faḍl’u’lláh = Faḍlollah",
+  "Faḍl’u’lláh = Fa[ḍd]lollah",
   "Fárábí = Farabi",
   "Fárán = Faran",
   "Fáṭimih = F[áa][ṭt][ie]m[ia]h",
@@ -175,7 +175,7 @@ const commonMisspellings = [
   "Guardian = G[r]?[a]?u[a]?[r]?dian",
   "Gulpáygán = G[ou]lp[aá]ye?g[aá]n",
   "Gulpáygání = G[ou]lp[aá]ye?g[aá]n[ií]",
-  "Há<u>sh</u>im = Hashem",
+  "Há<u>sh</u>im = Hash[ie]m",
   "Ḥabíb’u’lláh = Hab[b]?ib[uo]ll[aá]h", // Habbibollah
   "Ḥadbá’ = Hadba'?",
   "Hádí = H[áa]d[ií]()",
@@ -235,8 +235,8 @@ const commonMisspellings = [
   "Káẓim = K[aá][ẓz]im()",
   "Kirmán = K[ei]rm[aá]n",
   "Kirmán = Kirman",
-  "Kirman<u>sh</u>áh = K[ei]rm[aá]nsh[aá]h", // ADDED
-  "Kirman<u>sh</u>áhí = K[ei]rm[aá]nsh[aá]h[iíI]", // ADDED
+  "Kirmán<u>sh</u>áh = K[ei]rm[aá]nsh[aá]h", // ADDED
+  "Kirmán<u>sh</u>áhí = K[ei]rm[aá]nsh[aá]h[iíI]", // ADDED
   "Kirmání = K[ei]rm[aá]n[iíI]", // ADDED
   "Kitáb = Kitab()",
   "Kitáb-i-‘Ahd = Kit[aá]b[- ]i[- ]'?Ahd",
@@ -315,8 +315,8 @@ const commonMisspellings = [
   "Paran = P[áa]r[áa]n",
   "Parvíz = Parviz",
   "Port Sa‘íd = Port\s+Said",
-  "Qá'in = Q[aá]'?in",
-  "Qá'iní = Q[aá]'?in[ií]",
+  "Qá’in = Q[aá][‘’']?in",
+  "Qá’iní = Q[aá][‘’']?in[ií]",
   "Qá’im = Q[aá][y]?[-‘’']?[ie]m",
   "Qádí-Kalá = Q[aá]d[ií][-]?[Kk][aá]l[aá]",
   "Qádí-Kalá’í = Q[aá]d[ií][-]?[Kk][aá]l[aá]'?i",
@@ -368,7 +368,7 @@ const commonMisspellings = [
   "Sulaymáníyyih = S[uo]l[eia][y]?m[aá]n[ií]y[y]?[ai][h]?",
   "Sulṭán = Sul[ṭt][aá]n()",
   "Sunní = S[uo]nn[ií]()",
-  "Súrah = S[úu]r[aei]h(s?)",
+  "Súrah = S[úu]r[a]h(s?)", // removed 'i' so we don't change "surih"
   "Súratu’l-Haykal = S[úu]ra[y]?[t]?'?[uo]'?l[- ]Hayk[a]?l",
   "Ta’yíd = Ta'?yid",
   "Ṭabarsí = [ṬT]ab[áa]rs[iíI]",
@@ -417,7 +417,7 @@ const commonMisspellings = [
   // REPLACE LAST - DO NOT SORT!
   "‘Alí-Muḥammad = ‘Alí Muḥammad", // ‘Alí and Muḥammad both replaced earlier; this is just for the space
   "$1u’<u>$2</u>-<u>$3</u> = ()[ou]'([dst]h)[-] ?(<[uU]>|[DSTdst]h)", // u'sh-Sh
-  
+
 ];
 
 class BahaiAutocorrect {
@@ -433,7 +433,6 @@ class BahaiAutocorrect {
 }
 
 BahaiAutocorrect.prototype.correct = function() {
-
   this.changes = []
   this.str = this.str
     // dotted letters ḍṣẓṭḥ ḌṢẒṬḤ
@@ -512,7 +511,7 @@ BahaiAutocorrect.prototype.correct = function() {
 
         let findRE = new RegExp(startWord + find + endWord, 'gm')
         let findUpperRE = new RegExp(startWord + findUpper + endWord, 'gm')
-  
+
 
         this.str = this.str.replace(findRE, repl)
         this.str = this.str.replace(findUpperRE, replUpper)
@@ -545,8 +544,9 @@ BahaiAutocorrect.prototype.correct = function() {
   }
 
   // Some minor cleanup
-  this.str = this.str
-    .replace(/·/g, ' ')
+
+  // removing this one because it affects older Arabic texts
+  // this.str = this.str.replace(/·/g, ' ')
 
   // STRIP TAGS - TODO: remove this?
   if (this.stripTags) {
@@ -559,7 +559,7 @@ BahaiAutocorrect.prototype.correct = function() {
     .replace(/([a-z])=‘([AI])/ig, "$1='$2")
     // remove the space that we added to the beginning of the string
     .replace(/^ /m, '')
-  
+
   return this
 }
 
@@ -597,7 +597,7 @@ DiffChange.prototype.splitDiff = function(regex) {
           if (removeList[i] !== addList[i]) newChangeList.push({remove: removeList[i], add: addList[i]})
         }
       }
-      // If the added and removed sections contain different numbers of words, 
+      // If the added and removed sections contain different numbers of words,
       // or if the added section contains one word or none,
       else {
         // USE ENTIRE CHANGE
